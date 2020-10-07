@@ -34,7 +34,7 @@ source = requests.get('http://coreyms.com').text
 
 soup = BeautifulSoup(source, 'lxml')
 
-# Create and reand csv file
+# Create and read csv file
 csv_file = open('cms_scrap.csv', 'w')
 # Write on csv_file
 csv_writer = csv.writer(csv_file)
