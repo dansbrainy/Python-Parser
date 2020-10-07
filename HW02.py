@@ -3,10 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import json
 import re
-import pprint
-
-# 2333.20 + 2422.68
-# experience in marketing 
+import pprint 
 
 def csv_parser(filename):
 
