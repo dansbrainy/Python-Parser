@@ -22,7 +22,7 @@ def csv_parser(filename):
         if (filename == 'countries'):
             # find fieldnames
 
-            for row in csv_reader:
+            for row in csv_reader:      #Read
 
                 try:
 
@@ -37,11 +37,13 @@ def csv_parser(filename):
                     literacy = float(row['Literacy (%)'].replace(",", "."))
                     if literacy == "": literacy = "Unknown"
 
+                    list = [country, region, population, density, gdp, literacy]
+
                 except Exception as e:
                     gdp = "Unknown"
                     literacy = "Unknown"
                     pass
                 
-                print(gdp)
+                print(list)
 
 csv_parser('countries')
