@@ -1,0 +1,1514 @@
+{
+    "Afghanistan": {
+        "national_dish": "Kabuli Palaw",
+        "languages": "Balochi;Dari;Pashto;Turkmenian;Uzbek",
+        "religion": "Islam",
+        "government": "Islamic Emirate",
+        "currency_name": "Afghanistan Afghani"
+    },
+    "Albania": {
+        "national_dish": "Tav\u00eb kosi",
+        "languages": "Albaniana;Greek;Macedonian",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Albanian Lek"
+    },
+    "Algeria": {
+        "national_dish": "Couscous",
+        "languages": "Arabic;Berberi",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Algerian Dinar"
+    },
+    "American Samoa": {
+        "national_dish": null,
+        "languages": "English;Samoan;Tongan",
+        "religion": "Christianity",
+        "government": "US Territory",
+        "currency_name": "US Dollar"
+    },
+    "Andorra": {
+        "national_dish": null,
+        "languages": "Catalan;French;Portuguese;Spanish",
+        "religion": "Christianity",
+        "government": "Parliamentary Coprincipality",
+        "currency_name": "Euro"
+    },
+    "Angola": {
+        "national_dish": "Moamba de galinha",
+        "languages": "Ambo;Chokwe;Kongo;Luchazi;Luimbe-nganguela;Luvale;Mbundu;Nyaneka-nkhumbi;Ovimbundu",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Angolan Kwanza"
+    },
+    "Anguilla": {
+        "national_dish": null,
+        "languages": "English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": "East Caribbean Dollar"
+    },
+    "Antigua And Barbuda": {
+        "national_dish": "Pepperpot, Fungee",
+        "languages": "Creole English;English",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "East Caribbean Dollar"
+    },
+    "Argentina": {
+        "national_dish": "Asado",
+        "languages": "Indian Languages;Italian;Spanish",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Argentine Peso"
+    },
+    "Armenia": {
+        "national_dish": "Harissa, Dolma, Khorovats",
+        "languages": "Armenian;Azerbaijani",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Armenian Dram"
+    },
+    "Aruba": {
+        "national_dish": "Keshi yena",
+        "languages": "Dutch;English;Papiamento;Spanish",
+        "religion": "Christianity",
+        "government": "Nonmetropolitan Territory of The Netherlands",
+        "currency_name": "Aruban Guilder"
+    },
+    "Australia": {
+        "national_dish": "Meat pie,Roast lamb",
+        "languages": "Arabic;Canton Chinese;English;German;Greek;Italian;Serbo-Croatian;Vietnamese",
+        "religion": "Christianity",
+        "government": "Federation Constitutional Monarchy",
+        "currency_name": "Australian Dollar"
+    },
+    "Austria": {
+        "national_dish": "Wiener schnitzel, Tafelspitz",
+        "languages": "Czech;German;Hungarian;Polish;Romanian;Serbo-Croatian;Slovene;Turkish",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Euro"
+    },
+    "Azerbaijan": {
+        "national_dish": "Dolma",
+        "languages": "Armenian;Azerbaijani;Lezgian;Russian",
+        "religion": "Islam",
+        "government": "Federal Republic",
+        "currency_name": "Azerbaijan New Manat"
+    },
+    "Bahamas": {
+        "national_dish": "Crack conch with peas and rice",
+        "languages": "Creole English;Creole French",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Bahamian Dollar"
+    },
+    "Bahrain": {
+        "national_dish": "Machboos",
+        "languages": "Arabic;English",
+        "religion": "Islam",
+        "government": "Monarchy (Emirate)",
+        "currency_name": "Bahraini Dinar"
+    },
+    "Bangladesh": {
+        "national_dish": "Rice, Fish, Chicken Korma",
+        "languages": "Bengali;Chakma;Garo;Khasi;Marma;Santhali;Tripuri",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Bangladeshi Taka"
+    },
+    "Barbados": {
+        "national_dish": "Cou-Cou and Flying Fish",
+        "languages": "Bajan;English",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Barbados Dollar"
+    },
+    "Belarus": {
+        "national_dish": "Draniki",
+        "languages": "Belorussian;Polish;Russian;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Belarussian Ruble"
+    },
+    "Belgium": {
+        "national_dish": "Moules-frites",
+        "languages": "Arabic;Dutch;French;German;Italian;Turkish",
+        "religion": "Christianity",
+        "government": "Federation Constitutional Monarchy",
+        "currency_name": "Euro"
+    },
+    "Belize": {
+        "national_dish": "Boil up",
+        "languages": "English;Garifuna;Maya Languages;Spanish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Belize Dollar"
+    },
+    "Benin": {
+        "national_dish": null,
+        "languages": "Adja;Aizo;Bariba;Fon;Ful;Joruba;Somba",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "Bermuda": {
+        "national_dish": "Bermuda fish chowder",
+        "languages": "English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": "Bermudian Dollar"
+    },
+    "Bhutan": {
+        "national_dish": "Ema datshi",
+        "languages": "Asami;Dzongkha;Nepali",
+        "religion": "Buddhism",
+        "government": "Monarchy",
+        "currency_name": "Bhutan Ngultrum"
+    },
+    "Bolivia": {
+        "national_dish": "Salte\u00f1as",
+        "languages": "Aimar\u221a\u00b0;Guaran\u221a\u2260;Ket\u00ac\u00f6ua;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Boliviano"
+    },
+    "Bosnia And Herzegovina": {
+        "national_dish": "Bosnian pot",
+        "languages": "Bosnian",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": null
+    },
+    "Botswana": {
+        "national_dish": "Seswaa",
+        "languages": "Khoekhoe;Ndebele;San;Shona;Tswana",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Botswana Pula"
+    },
+    "Brazil": {
+        "national_dish": "Feijoada",
+        "languages": "German;Indian Languages;Italian;Japanese;Portuguese",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Brazilian Real"
+    },
+    "British Virgin Islands": {
+        "religion": "Christianity",
+        "national_dish": null,
+        "languages": [],
+        "government": null,
+        "currency_name": null
+    },
+    "Brunei": {
+        "national_dish": "Ambuyat",
+        "languages": "Chinese;English;Malay;Malay-English",
+        "religion": "Islam",
+        "government": "Monarchy (Sultanate)",
+        "currency_name": null
+    },
+    "Bulgaria": {
+        "national_dish": "Banitsa, Bob chorba",
+        "languages": "Bulgariana;Macedonian;Romani;Turkish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Bulgarian Lev"
+    },
+    "Burkina Faso": {
+        "national_dish": null,
+        "languages": "Busansi;Dagara;Dyula;Ful;Gurma;Mossi",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "Myanmar": {
+        "national_dish": null,
+        "languages": "Burmese;Chin;Kachin;Karen;Kayah;Mon;Rakhine;Shan",
+        "religion": "Buddhism",
+        "government": "Republic",
+        "currency_name": "Myanmar Kyat"
+    },
+    "Burundi": {
+        "national_dish": null,
+        "languages": "French;Kirundi;Swahili",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Burundi Franc"
+    },
+    "Cambodia": {
+        "national_dish": "Amok trey",
+        "languages": "Chinese;Khmer;T\u00ac\u00f6am;Vietnamese",
+        "religion": "Buddhism",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Kampuchean Riel"
+    },
+    "Cameroon": {
+        "national_dish": "Ndol\u00e9",
+        "languages": "Bamileke-bamum;Duala;Fang;Ful;Maka;Mandara;Masana;Tikar",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "CFA Franc BEAC"
+    },
+    "Canada": {
+        "national_dish": "Kraft Dinner",
+        "languages": "Chinese;Dutch;English;Eskimo Languages;French;German;Italian;Polish;Portuguese;Punjabi;Spanish;Ukrainian",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy, Federation",
+        "currency_name": "Canadian Dollar"
+    },
+    "Cape Verde": {
+        "national_dish": "Cachupa",
+        "languages": "Crioulo;Portuguese",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Cape Verde Escudo"
+    },
+    "Cayman Islands": {
+        "national_dish": null,
+        "languages": "English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": "Cayman Islands Dollar"
+    },
+    "Central African Republic": {
+        "national_dish": null,
+        "languages": "Banda;Gbaya;Mandjia;Mbum;Ngbaka;Sara",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "CFA Franc BEAC"
+    },
+    "Chad": {
+        "national_dish": null,
+        "languages": "Arabic;Gorane;Hadjarai;Kanem-bornu;Mayo-kebbi;Ouaddai;Sara;Tandjile",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": null
+    },
+    "Chile": {
+        "national_dish": "Empanada",
+        "languages": "Aimar\u221a\u00b0;Araucan;Rapa nui;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Chilean Peso"
+    },
+    "China": {
+        "national_dish": "Peking Duck",
+        "languages": "Chinese;Dong;Hui;Mant\u00ac\u00f6u;Miao;Mongolian;Puyi;Tibetan;Tujia;Uighur;Yi;Zhuang",
+        "religion": "Unaffiliated Religions",
+        "government": "People's Republic",
+        "currency_name": "Yuan Renminbi"
+    },
+    "Colombia": {
+        "national_dish": "Ajiaco, Bandeja paisa",
+        "languages": "Arawakan;Caribbean;Chibcha;Creole English;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Colombian Peso"
+    },
+    "Comoros": {
+        "national_dish": null,
+        "languages": "Comorian;Comorian-Arabic;Comorian-French;Comorian-madagassi;Comorian-Swahili",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Comoros Franc"
+    },
+    "Cook Islands": {
+        "national_dish": null,
+        "languages": "English;Maori",
+        "religion": "Christianity",
+        "government": "Nonmetropolitan Territory of New Zealand",
+        "currency_name": "New Zealand Dollar"
+    },
+    "Costa Rica": {
+        "national_dish": "Gallo pinto",
+        "languages": "Chibcha;Chinese;Creole English;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Costa Rican Colon"
+    },
+    "Croatia": {
+        "national_dish": "Istrian stew",
+        "languages": "Serbo-Croatian;Slovene",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Croatian Kuna"
+    },
+    "Cuba": {
+        "national_dish": "Ropa vieja, Moros y cristianos",
+        "languages": "Spanish",
+        "religion": "Christianity",
+        "government": "Socialistic Republic",
+        "currency_name": "Cuban Peso"
+    },
+    "Cyprus": {
+        "national_dish": "Fasolada",
+        "languages": "Greek;Turkish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Czech Republic": {
+        "national_dish": "roast pork with dumplings and sauerkraut",
+        "languages": "Czech;German;Hungarian;Moravian;Polish;Romani;Silesiana;Slovak",
+        "religion": "Unaffiliated Religions",
+        "government": "Republic",
+        "currency_name": null
+    },
+    "Denmark": {
+        "national_dish": "fried pork and potato-based dish",
+        "languages": "Arabic;Danish;English;German;Norwegian;Swedish;Turkish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Danish Krone"
+    },
+    "Djibouti": {
+        "national_dish": null,
+        "languages": "Afar;Arabic;Somali",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Djibouti Franc"
+    },
+    "Dominica": {
+        "national_dish": "Mountain chicken, Fish broth",
+        "languages": "Creole English;Creole French",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "East Caribbean Dollar"
+    },
+    "Dominican Republic": {
+        "national_dish": "rice, red beans, and meat",
+        "languages": "Creole French;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Dominican Peso"
+    },
+    "East Timor": {
+        "national_dish": null,
+        "languages": "Portuguese;Sunda",
+        "government": "Administrated by the UN",
+        "currency_name": null,
+        "religion": null
+    },
+    "Ecuador": {
+        "national_dish": "Encebollado, Fritada,Guatitas,",
+        "languages": "Ket\u00ac\u00f6ua;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Ecuador Sucre"
+    },
+    "Egypt": {
+        "national_dish": "Ful medames, kushari,",
+        "languages": "Arabic;Sinaberberi",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Egyptian Pound"
+    },
+    "El Salvador": {
+        "national_dish": "Pupusa",
+        "languages": "Nahua;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "El Salvador Colon"
+    },
+    "Equatorial Guinea": {
+        "national_dish": null,
+        "languages": "Bubi;Fang",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "CFA Franc BEAC"
+    },
+    "Eritrea": {
+        "national_dish": "Zigini with injera, Gored gored, raw meat",
+        "languages": "Afar;Bilin;Hadareb;Saho;Tigre;Tigrigna",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Eritrean Nakfa"
+    },
+    "Estonia": {
+        "national_dish": "sauerkraut stew",
+        "languages": "Belorussian;Estonian;Finnish;Russian;Ukrainian",
+        "religion": "Unaffiliated Religions",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Ethiopia": {
+        "national_dish": "Wat with injera, Fit-fit",
+        "languages": "Amharic;Gurage;Oromo;Sidamo;Somali;Tigrigna;Walaita",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Ethiopian Birr"
+    },
+    "Faroe Islands": {
+        "national_dish": null,
+        "languages": "Danish;Faroese",
+        "government": "Part of Denmark",
+        "currency_name": " Danish Krone",
+        "religion": null
+    },
+    "Fiji": {
+        "religion": "Christianity",
+        "national_dish": null,
+        "languages": [],
+        "government": null,
+        "currency_name": null
+    },
+    "Finland": {
+        "national_dish": "Karjalanpaisti,M\u00e4mmi, Saut\u00e9ed reindeer",
+        "languages": "Estonian;Finnish;Russian;Saame;Swedish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "France": {
+        "national_dish": "Cr\u00eape, Pot-au-feu,Macaron, Bisque",
+        "languages": "Arabic;French;Italian;Portuguese;Spanish;Turkish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "French Guiana": {
+        "national_dish": null,
+        "languages": "Creole French;Indian Languages",
+        "religion": "Christianity",
+        "government": "Overseas Department of France",
+        "currency_name": "Euro"
+    },
+    "French Polynesia": {
+        "national_dish": null,
+        "languages": "Chinese;French;Tahitian",
+        "religion": "Christianity",
+        "government": "Nonmetropolitan Territory of France",
+        "currency_name": null
+    },
+    "Gabon": {
+        "national_dish": "Poulet Nyembwe",
+        "languages": "Fang;Mbete;Mpongwe;Punu-sira-nzebi",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "CFA Franc BEAC"
+    },
+    "Gambia": {
+        "national_dish": null,
+        "languages": "Diola;Ful;Malinke;Soninke;Wolof",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Gambian Dalasi"
+    },
+    "Georgia": {
+        "national_dish": "Khachapuri, khinkali",
+        "languages": "Abhyasi;Armenian;Azerbaijani;Georgiana;Osseetti;Russian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Georgian Lari"
+    },
+    "Germany": {
+        "national_dish": "Currywurst, Sauerbraten, Bratwurst",
+        "languages": "German;Greek;Italian;Polish;Southern Slavic Languages;Turkish",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Euro"
+    },
+    "Ghana": {
+        "national_dish": "Fufu",
+        "languages": "Akan;Ewe;Ga-adangme;Gurma;Joruba;Mossi",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Ghanaian Cedi"
+    },
+    "Gibraltar": {
+        "national_dish": null,
+        "languages": "Arabic;English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": "Gibraltar Pound"
+    },
+    "Greece": {
+        "national_dish": "Fasolada,Moussaka, Souvlaki",
+        "languages": "Greek;Turkish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Greenland": {
+        "national_dish": "Kiviak",
+        "languages": "Danish;Greenlandic",
+        "religion": "Christianity",
+        "government": "Part of Denmark",
+        "currency_name": "Danish Krone"
+    },
+    "Grenada": {
+        "national_dish": "Oil Down",
+        "languages": "Creole English",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "East Carribean Dollar"
+    },
+    "Guadeloupe": {
+        "national_dish": null,
+        "languages": "Creole French;French",
+        "religion": "Christianity",
+        "government": "Overseas Department of France",
+        "currency_name": null
+    },
+    "Guam": {
+        "national_dish": null,
+        "languages": "Chamorro;English;Japanese;Korean;Philippene Languages",
+        "religion": "Christianity",
+        "government": "US Territory",
+        "currency_name": null
+    },
+    "Guatemala": {
+        "national_dish": "Fiambre, Pepian (hearty meat stew)",
+        "languages": "Cakchiquel;Kekch\u221a\u2260;Mam;Quich\u221a\u00a9;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Guatemalan Quetzal"
+    },
+    "Guinea": {
+        "national_dish": null,
+        "languages": "Ful;Kissi;Kpelle;Loma;Malinke;Susu;Yalunka",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Guinea Franc"
+    },
+    "Guyana": {
+        "national_dish": "Pepperpot",
+        "languages": "Arawakan;Caribbean;Creole English",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Guyana Dollar"
+    },
+    "Haiti": {
+        "national_dish": "Red beans and rice",
+        "languages": "French;Haiti Creole",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Haitian Gourde"
+    },
+    "Honduras": {
+        "national_dish": "Baleada, Carne asada, Sopa de Caracol (Conch Soup)",
+        "languages": "Creole English;Garifuna;Miskito;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Honduran Lempira"
+    },
+    "Hong Kong": {
+        "national_dish": "Char siu",
+        "languages": "Canton Chinese;Chiu chau;English;Fukien;Hakka",
+        "religion": "Unaffiliated Religions",
+        "government": "Special Administrative Region of China",
+        "currency_name": "Hong Kong Dollar"
+    },
+    "Hungary": {
+        "national_dish": "Guly\u00e1s,",
+        "languages": "German;Hungarian;Romani;Romanian;Serbo-Croatian;Slovak",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Hungarian Forint"
+    },
+    "Iceland": {
+        "national_dish": "H\u00e1karl, \u00deorramatur",
+        "languages": "English;Icelandic",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Iceland Krona"
+    },
+    "India": {
+        "national_dish": "No officially announced national dish",
+        "languages": "Asami;Bengali;Gujarati;Hindi;Kannada;Malayalam;Marathi;Odia;Punjabi;Tamil;Telugu;Urdu;Sanskrit;English;Konkani;Nepali;Bodo;Kashmiri;Maithili;Santali;Sindhi",
+        "religion": "Hinduism",
+        "government": "Federal Republic",
+        "currency_name": "Indian Rupee"
+    },
+    "Indonesia": {
+        "national_dish": "Tumpeng Sate,Soto,Nasi goreng",
+        "languages": "Bahasa;Bali;Banja;Batakki;Bugi;Javanese;Madura;Malay;Minangkabau;Sunda",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Indonesian Rupiah"
+    },
+    "Iran": {
+        "national_dish": "Chelo kabab, Ghormeh sabzi",
+        "languages": "Arabic;Azerbaijani;Bakhtyari;Balochi;Gilaki;Kurdish;Luri;Mazandarani;Persian;Turkmenian",
+        "religion": "Islam",
+        "government": "Islamic Republic",
+        "currency_name": "Iranian Rial"
+    },
+    "Iraq": {
+        "national_dish": "Samak masgouf,Kleicha",
+        "languages": "Arabic;Assyrian;Azerbaijani;Kurdish;Persian",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Iraqi Dinar"
+    },
+    "Ireland": {
+        "national_dish": "Colcannon,Irish stew",
+        "languages": "English;Irish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Isle Of Man": {
+        "religion": "Christianity",
+        "national_dish": null,
+        "languages": [],
+        "government": null,
+        "currency_name": null
+    },
+    "Israel": {
+        "national_dish": "Hummus, falafel, Meorav Yerushalmi",
+        "languages": "Arabic;Hebrew;Russian",
+        "religion": "Judaism",
+        "government": "Republic",
+        "currency_name": "Israeli New Shekel"
+    },
+    "Italy": {
+        "national_dish": "Pasta,Polenta,Pizza, Risotto",
+        "languages": "Albaniana;French;Friuli;German;Italian;Romani;Sardinian;Slovene",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Jamaica": {
+        "national_dish": "Ackee and Saltfish, Jamaican patty",
+        "languages": "Creole English;Hindi",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Jamaican Dollar"
+    },
+    "Japan": {
+        "national_dish": "Sushi, Japanese curry,Ramen",
+        "languages": "Ainu;Chinese;English;Japanese;Korean;Philippene Languages",
+        "religion": "Unaffiliated Religions",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Japanese Yen"
+    },
+    "Jordan": {
+        "national_dish": "Mansaf",
+        "languages": "Arabic;Armenian;Circassian",
+        "religion": "Islam",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Jordanian Dinar"
+    },
+    "Kazakhstan": {
+        "national_dish": null,
+        "languages": "German;Kazakh;Russian;Tatar;Ukrainian;Uzbek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": null
+    },
+    "Kenya": {
+        "national_dish": "Ugali, Sukuma wiki, Nyama choma",
+        "languages": "Gusii;Kalenjin;Kamba;Kikuyu;Luhya;Luo;Masai;Meru;Nyika;Turkana",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Kenyan Shilling"
+    },
+    "Kiribati": {
+        "national_dish": null,
+        "languages": "Kiribati;Tuvalu",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Australian Dollar"
+    },
+    "Kuwait": {
+        "national_dish": "Machboos",
+        "languages": "Arabic;English",
+        "religion": "Islam",
+        "government": "Constitutional Monarchy (Emirate)",
+        "currency_name": "Kuwaiti Dinar"
+    },
+    "Kyrgyzstan": {
+        "national_dish": "Beshbarmak, Laghman, Kuurdak",
+        "languages": "Kazakh;Kirgiz;Russian;Tadzhik;Tatar;Ukrainian;Uzbek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Som"
+    },
+    "Laos": {
+        "national_dish": "Tum Mak Hoong (Som Tum, its Thai name)",
+        "languages": "Lao;Lao-Soung;Mon-khmer;Thai",
+        "religion": "Buddhism",
+        "government": "Republic",
+        "currency_name": "Lao Kip"
+    },
+    "Latvia": {
+        "national_dish": "Latke",
+        "languages": "Belorussian;Latvian;Lithuanian;Polish;Russian;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Latvian Lats"
+    },
+    "Lebanon": {
+        "national_dish": "Kibbeh",
+        "languages": "Arabic;Armenian;French",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Lebanese Pound"
+    },
+    "Lesotho": {
+        "national_dish": null,
+        "languages": "English;Sotho;Zulu",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Lesotho Loti"
+    },
+    "Liberia": {
+        "national_dish": null,
+        "languages": "Bassa;Gio;Grebo;Kpelle;Kru;Loma;Malinke;Mano",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Liberian Dollar"
+    },
+    "Libya": {
+        "religion": "Islam",
+        "national_dish": null,
+        "languages": [],
+        "government": null,
+        "currency_name": null
+    },
+    "Liechtenstein": {
+        "national_dish": null,
+        "languages": "German;Italian;Turkish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Swiss Franc"
+    },
+    "Lithuania": {
+        "national_dish": "Cepelinai",
+        "languages": "Belorussian;Lithuanian;Polish;Russian;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Lithuanian Litas"
+    },
+    "Luxembourg": {
+        "national_dish": "Judd mat Gaardebounen, Bouneschlupp",
+        "languages": "French;German;Italian;Luxembourgish;Portuguese",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Euro"
+    },
+    "Macao": {
+        "national_dish": null,
+        "languages": "Canton Chinese;English;Mandarin Chinese;Portuguese",
+        "religion": "Folk Religions",
+        "government": "Special Administrative Region of China",
+        "currency_name": null
+    },
+    "Macedonia": {
+        "languages": "Albaniana;Macedonian;Romani;Serbo-Croatian;Turkish",
+        "religion": "Christianity",
+        "national_dish": null,
+        "government": null,
+        "currency_name": null
+    },
+    "Madagascar": {
+        "national_dish": "Romazava",
+        "languages": "French;Malagasy",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Malagasy Franc"
+    },
+    "Malawi": {
+        "national_dish": null,
+        "languages": "Chichewa;Lomwe;Ngoni;Yao",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Malawi Kwacha"
+    },
+    "Malaysia": {
+        "national_dish": "Nasi lemak,Satay, Laksa, Roti canai",
+        "languages": "Chinese;Dusun;English;Iban;Malay;Tamil",
+        "religion": "Islam",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Malaysian Ringgit"
+    },
+    "Maldives": {
+        "national_dish": null,
+        "languages": "Dhivehi;English",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Maldive Rufiyaa"
+    },
+    "Mali": {
+        "national_dish": null,
+        "languages": "Bambara;Ful;Senufo and Minianka;Songhai;Soninke;Tamashek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "Malta": {
+        "national_dish": "Pastizzi, Rabbit Stew (Fenkata)",
+        "languages": "English;Maltese",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Marshall Islands": {
+        "national_dish": null,
+        "languages": "English;Marshallese",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "US Dollar"
+    },
+    "Martinique": {
+        "national_dish": null,
+        "languages": "Creole French;French",
+        "religion": "Christianity",
+        "government": "Overseas Department of France",
+        "currency_name": null
+    },
+    "Mauritania": {
+        "national_dish": "Thieboudienne, Couscous",
+        "languages": "Ful;Hassaniya;Soninke;Tukulor;Wolof;Zenaga",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Mauritanian Ouguiya"
+    },
+    "Mauritius": {
+        "national_dish": null,
+        "languages": "Bhojpuri;Creole French;French;Hindi;Marathi;Tamil",
+        "religion": "Hinduism",
+        "government": "Republic",
+        "currency_name": "Mauritius Rupee"
+    },
+    "Mayotte": {
+        "national_dish": null,
+        "languages": "French;Mahor\u221a\u00a9;Malagasy",
+        "religion": "Islam",
+        "government": "Territorial Collectivity of France",
+        "currency_name": "Euro"
+    },
+    "Mexico": {
+        "national_dish": "Tacos, Mole poblano,Chiles en nogada",
+        "languages": "Mixtec;N\u221a\u00b0huatl;Otom\u221a\u2260;Spanish;Yucatec;Zapotec",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Mexican Nuevo Peso"
+    },
+    "Micronesia, Federated States Of": {
+        "national_dish": null,
+        "languages": "Kosrean;Mortlock;Pohnpei;Trukese;Wolea;Yap",
+        "government": "Federal Republic",
+        "currency_name": null,
+        "religion": null
+    },
+    "Moldova": {
+        "national_dish": "M\u0103m\u0103lig\u0103, Sarmale, R\u0103cituri",
+        "languages": "Bulgariana;Gagauzi;Romanian;Russian;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Moldovan Leu"
+    },
+    "Monaco": {
+        "national_dish": null,
+        "languages": "English;French;Italian;Monegasque",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": null
+    },
+    "Mongolia": {
+        "national_dish": "Buuz",
+        "languages": "Bajad;Buryat;Dariganga;Dorbet;Kazakh;Mongolian",
+        "religion": "Buddhism",
+        "government": "Republic",
+        "currency_name": "Mongolian Tugrik"
+    },
+    "Montserrat": {
+        "national_dish": null,
+        "languages": "English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": "East Caribbean Dollar"
+    },
+    "Morocco": {
+        "national_dish": "Couscous, Tagine",
+        "languages": "Arabic;Berberi",
+        "religion": "Islam",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Moroccan Dirham"
+    },
+    "Mozambique": {
+        "national_dish": null,
+        "languages": "Chuabo;Lomwe;Makua;Marendje;Nyanja;Ronga;Sena;Shona;Tsonga;Tswa",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Mozambique Metical"
+    },
+    "Namibia": {
+        "national_dish": null,
+        "languages": "Afrikaans;Caprivi;German;Herero;Kavango;Nama;Ovambo;San",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Namibian Dollar"
+    },
+    "Nauru": {
+        "national_dish": null,
+        "languages": "Chinese;English;Kiribati;Nauru;Tuvalu",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Australian Dollar"
+    },
+    "Nepal": {
+        "national_dish": "Dal bhat",
+        "languages": "Bhojpuri;Hindi;Maithili;Nepali;Newari;Tamang;Tharu",
+        "religion": "Hinduism",
+        "government": "Federal parliamentary republic",
+        "currency_name": "Nepalese Rupee"
+    },
+    "Netherlands": {
+        "national_dish": "Stamppot, hutspot",
+        "languages": "Arabic;Dutch;Fries;Turkish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Euro"
+    },
+    "Netherlands Antilles": {
+        "national_dish": null,
+        "languages": "Dutch;English;Papiamento",
+        "government": "Nonmetropolitan Territory of The Netherlands",
+        "currency_name": "Netherlands Antillean Guilder",
+        "religion": null
+    },
+    "New Caledonia": {
+        "national_dish": null,
+        "languages": "French;Malenasian Languages;Polynesian Languages",
+        "religion": "Christianity",
+        "government": "Nonmetropolitan Territory of France",
+        "currency_name": null
+    },
+    "New Zealand": {
+        "national_dish": "Bacon and egg pie, lamb, pavlova",
+        "languages": "English;Maori",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "New Zealand Dollar"
+    },
+    "Nicaragua": {
+        "national_dish": "Gallo pinto",
+        "languages": "Creole English;Miskito;Spanish;Sumo",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Nicaraguan Cordoba Oro"
+    },
+    "Niger": {
+        "national_dish": null,
+        "languages": "Ful;Hausa;Kanuri;Songhai-zerma;Tamashek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "Nigeria": {
+        "national_dish": "Jollof rice",
+        "languages": "Bura;Edo;Ful;Hausa;Ibibio;Ibo;Ijo;Joruba;Kanuri;Tiv",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Nigerian Naira"
+    },
+    "Northern Mariana Islands": {
+        "national_dish": null,
+        "languages": "Carolinian;Chamorro;Chinese;English;Korean;Philippene Languages",
+        "religion": "Christianity",
+        "government": "Commonwealth of the US",
+        "currency_name": "US Dollar"
+    },
+    "Norway": {
+        "national_dish": "F\u00e5rik\u00e5l",
+        "languages": "Danish;English;Norwegian;Saame;Swedish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Norwegian Krone"
+    },
+    "Oman": {
+        "national_dish": null,
+        "languages": "Arabic;Balochi",
+        "religion": "Islam",
+        "government": "Monarchy (Sultanate)",
+        "currency_name": "Omani Rial"
+    },
+    "Pakistan": {
+        "national_dish": "Biryani, Nihari",
+        "languages": "Balochi;Brahui;Hindko;Pashto;Punjabi;Saraiki;Sindhi;Urdu",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Pakistan Rupee"
+    },
+    "Palau": {
+        "national_dish": null,
+        "languages": "Chinese;English;Palau;Philippene Languages",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "US Dollar"
+    },
+    "Panama": {
+        "national_dish": "Sancocho de gallina",
+        "languages": "Arabic;Creole English;Cuna;Embera;Guaym\u221a\u2260;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Panamanian Balboa"
+    },
+    "Papua New Guinea": {
+        "national_dish": null,
+        "languages": "Malenasian Languages;Papuan Languages",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Papua New Guinea Kina"
+    },
+    "Paraguay": {
+        "national_dish": "Sopa paraguaya",
+        "languages": "German;Guaran\u221a\u2260;Portuguese;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Paraguay Guarani"
+    },
+    "Peru": {
+        "national_dish": "Ceviche",
+        "languages": "Aimar\u221a\u00b0;Ket\u00ac\u00f6ua;Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Peruvian Nuevo Sol"
+    },
+    "Philippines": {
+        "national_dish": "Adobo,Lechon (both unofficial)",
+        "languages": "Bicol;Cebuano;Hiligaynon;Ilocano;Maguindanao;Maranao;Pampango;Pangasinan;Pilipino;Waray-waray",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Philippine Peso"
+    },
+    "Poland": {
+        "national_dish": "Bigos, Pierogi,Kotlet schabowy, \u017burek",
+        "languages": "Belorussian;German;Polish;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Polish Zloty"
+    },
+    "Portugal": {
+        "national_dish": "Bacalhau",
+        "languages": "Portuguese",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Puerto Rico": {
+        "national_dish": "Arroz con gandules, Mofongo",
+        "languages": "English;Spanish",
+        "religion": "Christianity",
+        "government": "Commonwealth of the US",
+        "currency_name": "US Dollar"
+    },
+    "Qatar": {
+        "national_dish": null,
+        "languages": "Arabic;Urdu",
+        "religion": "Islam",
+        "government": "Monarchy",
+        "currency_name": "Qatari Rial"
+    },
+    "Reunion": {
+        "national_dish": null,
+        "languages": "Chinese;Comorian;Creole French;Malagasy;Tamil",
+        "religion": "Christianity",
+        "government": "Overseas Department of France",
+        "currency_name": null
+    },
+    "Romania": {
+        "national_dish": "M\u0103m\u0103lig\u0103, Sarmale, Mici",
+        "languages": "German;Hungarian;Romani;Romanian;Serbo-Croatian;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Romanian New Leu"
+    },
+    "Russia": {
+        "religion": "Christianity",
+        "national_dish": null,
+        "languages": [],
+        "government": null,
+        "currency_name": null
+    },
+    "Rwanda": {
+        "national_dish": null,
+        "languages": "French;Rwanda",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Rwanda Franc"
+    },
+    "Saint Helena": {
+        "national_dish": null,
+        "languages": "English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": "St. Helena Pound"
+    },
+    "Saint Kitts And Nevis": {
+        "national_dish": null,
+        "languages": "Creole English;English",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": null
+    },
+    "Saint Lucia": {
+        "national_dish": null,
+        "languages": "Creole French;English",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "East Caribbean Dollar"
+    },
+    "Saint Pierre And Miquelon": {
+        "national_dish": null,
+        "languages": "French",
+        "religion": "Christianity",
+        "government": "Territorial Collectivity of France",
+        "currency_name": " Euro"
+    },
+    "Saint Vincent And The Grenadines": {
+        "national_dish": null,
+        "languages": "Creole English;English",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "East Caribbean Dollar"
+    },
+    "Samoa": {
+        "national_dish": null,
+        "languages": "English;Samoan;Samoan-English",
+        "religion": "Christianity",
+        "government": "Parlementary Monarchy",
+        "currency_name": "Samoan Tala"
+    },
+    "San Marino": {
+        "national_dish": "Torta Tre Monti",
+        "languages": "Italian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Sao Tome And Principe": {
+        "national_dish": null,
+        "languages": "Crioulo;French",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": " Dobra"
+    },
+    "Saudi Arabia": {
+        "national_dish": "Kabsa",
+        "languages": "Arabic",
+        "religion": "Islam",
+        "government": "Monarchy",
+        "currency_name": "Saudi Riyal"
+    },
+    "Senegal": {
+        "national_dish": "Thieboudienne",
+        "languages": "Diola;Ful;Malinke;Serer;Soninke;Wolof",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "Serbia": {
+        "religion": "Christianity",
+        "national_dish": null,
+        "languages": [],
+        "government": null,
+        "currency_name": null
+    },
+    "Seychelles": {
+        "national_dish": null,
+        "languages": "English;French;Seselwa",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Seychelles Rupee"
+    },
+    "Sierra Leone": {
+        "national_dish": null,
+        "languages": "Bullom-sherbro;Ful;Kono-vai;Kuranko;Limba;Mende;Temne;Yalunka",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Sierra Leone Leone"
+    },
+    "Singapore": {
+        "national_dish": "Chilli crab,Hainanese Chicken Rice",
+        "languages": "Chinese;Malay;Tamil",
+        "religion": "Buddhism",
+        "government": "Republic",
+        "currency_name": "Singapore Dollar"
+    },
+    "Slovakia": {
+        "national_dish": "Bryndzov\u00e9 halu\u0161ky",
+        "languages": "Czech and Moravian;Hungarian;Romani;Slovak;Ukrainian and Russian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Slovenia": {
+        "national_dish": "Ajdovi \u017eganci, Belokranjska povitica, Obara",
+        "languages": "Hungarian;Serbo-Croatian;Slovene",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Euro"
+    },
+    "Solomon Islands": {
+        "national_dish": null,
+        "languages": "Malenasian Languages;Papuan Languages;Polynesian Languages",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Solomon Islands Dollar"
+    },
+    "Somalia": {
+        "national_dish": "Canjeero with goat stew",
+        "languages": "Arabic;Somali",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Somali Shilling"
+    },
+    "South Africa": {
+        "national_dish": "Bobotie",
+        "languages": "Afrikaans;English;Ndebele;Northsotho;Southsotho;Swazi;Tsonga;Tswana;Venda;Xhosa;Zulu",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "South African Rand"
+    },
+    "Spain": {
+        "national_dish": "Tortilla espa\u00f1ola",
+        "languages": "Basque;Catalan;Galecian;Spanish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Euro"
+    },
+    "Sri Lanka": {
+        "languages": "Mixed Languages;Singali;Tamil",
+        "religion": "Buddhism",
+        "national_dish": null,
+        "government": null,
+        "currency_name": null
+    },
+    "Sudan": {
+        "national_dish": "Ful medames",
+        "languages": "Arabic;Bari;Beja;Chilluk;Dinka;Fur;Lotuko;Nubian Languages;Nuer;Zande",
+        "religion": "Islam",
+        "government": "Islamic Republic",
+        "currency_name": "Sudanese Pound"
+    },
+    "Suriname": {
+        "national_dish": null,
+        "languages": "Hindi;Sranantonga",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Surinam Dollar"
+    },
+    "Swaziland": {
+        "national_dish": null,
+        "languages": "Swazi;Zulu",
+        "religion": "Christianity",
+        "government": "Monarchy",
+        "currency_name": "Swaziland Lilangeni"
+    },
+    "Sweden": {
+        "national_dish": "K\u00f6ttbullar, Kr\u00e4ftskiva,Surstr\u00f6mming,Ostkaka",
+        "languages": "Arabic;Finnish;Norwegian;Southern Slavic Languages;Spanish;Swedish",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Swedish Krona"
+    },
+    "Switzerland": {
+        "national_dish": "Cervelat,Fondue, R\u00f6sti",
+        "languages": "French;German;Italian;Romansh",
+        "religion": "Christianity",
+        "government": "Federation",
+        "currency_name": "Swiss Franc"
+    },
+    "Syria": {
+        "national_dish": "Kibbeh",
+        "languages": "Arabic;Kurdish",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Syrian Pound"
+    },
+    "Taiwan": {
+        "languages": "Ami;Atayal;Hakka;Mandarin Chinese;Min;Paiwan",
+        "religion": "Folk Religions",
+        "national_dish": null,
+        "government": null,
+        "currency_name": null
+    },
+    "Tajikistan": {
+        "national_dish": "O'sh (pilaf)",
+        "languages": "Russian;Tadzhik;Uzbek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Tajik Somoni"
+    },
+    "Tanzania": {
+        "national_dish": "Ugali",
+        "languages": "Chaga and Pare;Gogo;Ha;Haya;Hehet;Luguru;Makonde;Nyakusa;Nyamwesi;Shambala;Swahili",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Tanzanian Shilling"
+    },
+    "Thailand": {
+        "national_dish": "Pad Thai, Tom Yum Goong",
+        "languages": "Chinese;Khmer;Kuy;Lao;Malay;Thai",
+        "religion": "Buddhism",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Thai Baht"
+    },
+    "Togo": {
+        "national_dish": null,
+        "languages": "Ane;Ewe;Gurma;Kaby\u221a\u00a9;Kotokoli;Moba;Naudemba;Watyi",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "Tonga": {
+        "national_dish": null,
+        "languages": "English;Tongan",
+        "religion": "Christianity",
+        "government": "Monarchy",
+        "currency_name": "Tongan Pa'anga"
+    },
+    "Trinidad And Tobago": {
+        "national_dish": "Callaloo,Doubles",
+        "languages": "Creole English;English;Hindi",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Trinidad and Tobago Dollar"
+    },
+    "Tunisia": {
+        "national_dish": "Couscous, Kabkabou",
+        "languages": "Arabic;Arabic-French;Arabic-French-English",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Tunisian Dollar"
+    },
+    "Turkey": {
+        "national_dish": "D\u00f6ner kebab, Kuru fasulye with pilav",
+        "languages": "Arabic;Kurdish;Turkish",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Turkish Lira"
+    },
+    "Turkmenistan": {
+        "national_dish": "Palaw",
+        "languages": "Kazakh;Russian;Turkmenian;Uzbek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Manat"
+    },
+    "Turks And Caicos Islands": {
+        "national_dish": null,
+        "languages": "English",
+        "religion": "Christianity",
+        "government": "Dependent Territory of the UK",
+        "currency_name": null
+    },
+    "Tuvalu": {
+        "national_dish": null,
+        "languages": "English;Kiribati;Tuvalu",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": "Australian Dollar"
+    },
+    "Uganda": {
+        "national_dish": "Matoke",
+        "languages": "Acholi;Ganda;Gisu;Kiga;Lango;Lugbara;Nkole;Rwanda;Soga;Teso",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Uganda Shilling"
+    },
+    "Ukraine": {
+        "national_dish": "Borscht, Varenyky",
+        "languages": "Belorussian;Bulgariana;Hungarian;Polish;Romanian;Russian;Ukrainian",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Ukraine Hryvnia"
+    },
+    "United Arab Emirates": {
+        "national_dish": null,
+        "languages": "Arabic;Hindi",
+        "religion": "Islam",
+        "government": "Emirate Federation",
+        "currency_name": "Arab Emirates Dirham"
+    },
+    "United Kingdom": {
+        "national_dish": "Fish and chips,Chicken tikka masala (Indian-British curry)",
+        "languages": "English;Gaeli;Kymri",
+        "religion": "Christianity",
+        "government": "Constitutional Monarchy",
+        "currency_name": null
+    },
+    "United States": {
+        "national_dish": "Hamburger, Hot dog, Fried chicken, Buffalo wings, Apple pie",
+        "languages": "Chinese;English;French;German;Italian;Japanese;Korean;Polish;Portuguese;Spanish;Tagalog;Vietnamese",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": null
+    },
+    "Uruguay": {
+        "national_dish": "Asado, Chivito",
+        "languages": "Spanish",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Uruguayan Peso"
+    },
+    "Uzbekistan": {
+        "national_dish": "O'sh",
+        "languages": "Karakalpak;Kazakh;Russian;Tadzhik;Tatar;Uzbek",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Uzbekistan Sum"
+    },
+    "Vanuatu": {
+        "national_dish": "Lap lap",
+        "languages": "Bislama;English;French",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Vanuatu Vatu"
+    },
+    "Venezuela": {
+        "national_dish": "Pabell\u00f3n criollo",
+        "languages": "Goajiro;Spanish;Warrau",
+        "religion": "Christianity",
+        "government": "Federal Republic",
+        "currency_name": "Venezuelan Bolivar"
+    },
+    "Vietnam": {
+        "national_dish": "Ph\u1edf, B\u00fan b\u00f2 Hu\u1ebf",
+        "languages": "Chinese;Khmer;Man;Miao;Muong;Nung;Thai;Tho;Vietnamese",
+        "religion": "Folk Religions",
+        "government": "Socialistic Republic",
+        "currency_name": "Vietnamese Dong"
+    },
+    "Wallis And Futuna": {
+        "national_dish": null,
+        "languages": "Futuna;Wallis",
+        "religion": "Christianity",
+        "government": "Nonmetropolitan Territory of France",
+        "currency_name": null
+    },
+    "Western Sahara": {
+        "national_dish": null,
+        "languages": "Arabic",
+        "religion": "Islam",
+        "government": "Occupied by Marocco",
+        "currency_name": "Moroccan Dirham"
+    },
+    "Yemen": {
+        "national_dish": "Saltah",
+        "languages": "Arabic;Soqutri",
+        "religion": "Islam",
+        "government": "Republic",
+        "currency_name": "Yemeni Rial"
+    },
+    "Zambia": {
+        "national_dish": null,
+        "languages": "Bemba;Chewa;Lozi;Nsenga;Nyanja;Tongan",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Zambian Kwacha"
+    },
+    "Zimbabwe": {
+        "national_dish": "Sadza",
+        "languages": "English;Ndebele;Nyanja;Shona",
+        "religion": "Christianity",
+        "government": "Republic",
+        "currency_name": "Zimbabwe Dollar"
+    }
+}
