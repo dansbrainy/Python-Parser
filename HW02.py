@@ -48,7 +48,7 @@ def csv_parser(filename):
                     literacy = "Unknown"
                     pass
 
-                return list
+                return lines
 
 data = csv_parser('countries')
 
@@ -69,22 +69,26 @@ def json_parser(filename, data):
         for country in data[0]:
             
             # json_country = re.search(country, json_data)
-            # for item in 
-            try:
-                json_country = json_data[country]
-                languages = (json_country['languages']).split() 
-                if languages == "": languages = "Unknown"
-                dish = json_country['national_dish']
-                if dish == "": dish = "Unknown"
-                religion = json_country['religion']
-                if religion == "": dish = "Unknown"
-                government = json_country['government']
-                if government == "": government = "Unknown"
-                currency = json_country['currency']
-                if currency == "": currency = "Unknown"
+            for item in json_data:
 
-    
-            except Exception as e:
-                return e
+                if country == item:
+                    print('yes')            #WRITE
+
+                try:
+                    # json_country = json_data[country]
+
+                    languages = (item['languages']).split() 
+                    if languages == "": languages = "Unknown"
+                    dish = item['national_dish']
+                    if dish == "": dish = "Unknown"
+                    religion = item['religion']
+                    if religion == "": dish = "Unknown"
+                    government = item['government']
+                    if government == "": government = "Unknown"
+                    currency = item['currency']
+                    if currency == "": currency = "Unknown"
+
+                except Exception as e:
+                    return e
 
 json_parser('additional_stats', data)
