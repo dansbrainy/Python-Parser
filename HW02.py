@@ -46,9 +46,11 @@ def csv_parser(filename):
                 except Exception as e:
                     return e
 
-                return lines
+        csv_file.close()
 
-data = csv_parser('countries')
+    return lines
+
+data = csv_parser('countries')          #check if right
 
 def json_parser(filename, data): 
 
@@ -62,30 +64,48 @@ def json_parser(filename, data):
 
     with open(filename + '.json', 'r') as json_file:
 
+        details = {}
+
         json_data = json.load(json_file)
 
         for country in data[0]:
-            
+
             # json_country = re.search(country, json_data)
             for item in json_data:
 
                 if country == item:
                     print('yes')            #WRITE
 
-                try:
-            
-                    languages = (item['languages']).split() 
-                    if languages == "": languages = "Unknown"
-                    dish = item['national_dish']
-                    if dish == "": dish = "Unknown"
-                    religion = item['religion']
-                    if religion == "": dish = "Unknown"
-                    government = item['government']
-                    if government == "": government = "Unknown"
-                    currency = item['currency']
-                    if currency == "": currency = "Unknown"
+                    try:
+                        languages = (item['languages']).split() 
+                        if languages == "": languages = "Unknown"
+                        dish = item['national_dish']
+                        if dish == "": dish = "Unknown"
+                        religion = item['religion']
+                        if religion == "": dish = "Unknown"
+                        government = item['government']
+                        if government == "": government = "Unknown"
+                        currency = item['currency']
+                        if currency == "": currency = "Unknown"
 
-                except Exception as e:
-                    return e
+
+                    except Exception as e:
+                        return e
+        
+        details["Country"] = data[0]
+        details["Region"] = data[1]
+        details["Population"] = data[2]
+        details["Pop. Density(per sq. mi.)"] = data[3]
+        details["GDP ($ percapita)"] = data[4]
+        details["Literacy (%)"] = data[5]
+        
+        details["Languages"] = languages
+        details["National Dish"] = dish
+        details["Religion"] = religion
+        details["Government"] = government
+        details["Currency Name"] = currency
+
+        return details
+        pprint.pprint(details, indent=2)
 
 json_parser('additional_stats', data)
