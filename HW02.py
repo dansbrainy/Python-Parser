@@ -8,12 +8,12 @@ import pprint
 def csv_parser(filename):
 
     lines = []
-    country = ""
-    region = ""
-    population = ""
-    density = ""
-    gdp = ""
-    literacy = ""
+    countries = []
+    regions = []
+    populations = []
+    densities = []
+    gdps = []
+    literacies = []
 
     with open(filename + '.csv', 'r', encoding = "utf8") as csv_file:
 
@@ -30,35 +30,35 @@ def csv_parser(filename):
                     region = str(row['Region'].strip())
                     population = int(row['Population'])
                     density = float(row['Pop. Density (per sq. mi.)'].replace(",", "."))
+                    gdp = int(row['GDP ($ per capita)']) if (gdp == ""): gdp = "Unknown"
+                    literacy = float(row['Literacy (%)'].replace(",", ".")) if literacy == "": literacy = "Unknown"
 
-                    gdp = int(row['GDP ($ per capita)'])
-                    if (gdp == ""): gdp = "Unknown"
+                    countries.append(country)
+                    regions.append(region)
+                    populations.append(population)
+                    densities.append(density)
+                    gdps.append(gdp)
+                    literacies.append(literacy)
 
-                    literacy = float(row['Literacy (%)'].replace(",", "."))
-                    if literacy == "": literacy = "Unknown"
-
-                    values = [country, region, population, density, gdp, literacy]
-                    
-                    lines.append(values)
-
+                    # lines.append(country, region, population, density, gdp, literacy)
                     pprint.pprint(lines, indent=2)
 
                 except Exception as e:
                     return e
-
-        csv_file.close()
+        
+    lines = countries, regions, populations, densities, gdps, literatures
+    csv_file.close()
 
     return lines
-
-data = csv_parser('countries')          #check if right
-
+    
+      #check if right
 def json_parser(filename, data): 
 
-    languages = ""
-    dish = ""
-    religion = ""
-    government = ""
-    currency = ""
+    languages = []
+    dishes = []
+    religions = []
+    governments = []
+    currencies = []
 
     # pprint(data)
 
@@ -77,21 +77,23 @@ def json_parser(filename, data):
                     print('yes')            #WRITE
 
                     try:
-                        languages = (item['languages']).split() 
-                        if languages == "": languages = "Unknown"
-                        dish = item['national_dish']
-                        if dish == "": dish = "Unknown"
-                        religion = item['religion']
-                        if religion == "": dish = "Unknown"
-                        government = item['government']
-                        if government == "": government = "Unknown"
-                        currency = item['currency']
-                        if currency == "": currency = "Unknown"
 
+                        language = (item['languages']).split() if language == "": language = "Unknown"
+                        dish = item['national_dish'] if dish == "": dish = "Unknown"
+                        religion = item['religion'] if religion == "": religion = "Unknown"
+                        government = item['government'] if government == "": government = "Unknown"
+                        currency = item['currency'] if currency == "": currency = "Unknown"
+                        
+                        languages.append(langauge)
+                        dishes.append(dish)
+                        religions.append(religion)
+                        governments.append(government)
+                        currencies.append(currency)
 
                     except Exception as e:
                         return e
         
+    
         details["Country"] = data[0]
         details["Region"] = data[1]
         details["Population"] = data[2]
@@ -108,4 +110,5 @@ def json_parser(filename, data):
         return details
         pprint.pprint(details, indent=2)
 
+data = csv_parser('countries')    
 json_parser('additional_stats', data)
