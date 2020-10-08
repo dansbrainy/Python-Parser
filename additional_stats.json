@@ -7,7 +7,7 @@
         "currency_name": "Afghanistan Afghani"
     },
     "Albania": {
-        "national_dish": "Tav\u00eb kosi",
+        "national_dish": "Tavë kosi",
         "languages": "Albaniana;Greek;Macedonian",
         "religion": "Islam",
         "government": "Republic",
@@ -168,8 +168,8 @@
         "currency_name": "Bhutan Ngultrum"
     },
     "Bolivia": {
-        "national_dish": "Salte\u00f1as",
-        "languages": "Aimar\u221a\u00b0;Guaran\u221a\u2260;Ket\u00ac\u00f6ua;Spanish",
+        "national_dish": "Salteñas",
+        "languages": "Aimar√°;Guaran√≠;Ket¬öua;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Boliviano"
@@ -239,13 +239,13 @@
     },
     "Cambodia": {
         "national_dish": "Amok trey",
-        "languages": "Chinese;Khmer;T\u00ac\u00f6am;Vietnamese",
+        "languages": "Chinese;Khmer;T¬öam;Vietnamese",
         "religion": "Buddhism",
         "government": "Constitutional Monarchy",
         "currency_name": "Kampuchean Riel"
     },
     "Cameroon": {
-        "national_dish": "Ndol\u00e9",
+        "national_dish": "Ndolé",
         "languages": "Bamileke-bamum;Duala;Fang;Ful;Maka;Mandara;Masana;Tikar",
         "religion": "Christianity",
         "government": "Republic",
@@ -288,14 +288,14 @@
     },
     "Chile": {
         "national_dish": "Empanada",
-        "languages": "Aimar\u221a\u00b0;Araucan;Rapa nui;Spanish",
+        "languages": "Aimar√°;Araucan;Rapa nui;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Chilean Peso"
     },
     "China": {
         "national_dish": "Peking Duck",
-        "languages": "Chinese;Dong;Hui;Mant\u00ac\u00f6u;Miao;Mongolian;Puyi;Tibetan;Tujia;Uighur;Yi;Zhuang",
+        "languages": "Chinese;Dong;Hui;Mant¬öu;Miao;Mongolian;Puyi;Tibetan;Tujia;Uighur;Yi;Zhuang",
         "religion": "Unaffiliated Religions",
         "government": "People's Republic",
         "currency_name": "Yuan Renminbi"
@@ -393,7 +393,7 @@
     },
     "Ecuador": {
         "national_dish": "Encebollado, Fritada,Guatitas,",
-        "languages": "Ket\u00ac\u00f6ua;Spanish",
+        "languages": "Ket¬öua;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Ecuador Sucre"
@@ -455,14 +455,14 @@
         "currency_name": null
     },
     "Finland": {
-        "national_dish": "Karjalanpaisti,M\u00e4mmi, Saut\u00e9ed reindeer",
+        "national_dish": "Karjalanpaisti,Mämmi, Sautéed reindeer",
         "languages": "Estonian;Finnish;Russian;Saame;Swedish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Euro"
     },
     "France": {
-        "national_dish": "Cr\u00eape, Pot-au-feu,Macaron, Bisque",
+        "national_dish": "Crêpe, Pot-au-feu,Macaron, Bisque",
         "languages": "Arabic;French;Italian;Portuguese;Spanish;Turkish",
         "religion": "Christianity",
         "government": "Republic",
@@ -561,7 +561,7 @@
     },
     "Guatemala": {
         "national_dish": "Fiambre, Pepian (hearty meat stew)",
-        "languages": "Cakchiquel;Kekch\u221a\u2260;Mam;Quich\u221a\u00a9;Spanish",
+        "languages": "Cakchiquel;Kekch√≠;Mam;Quich√©;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Guatemalan Quetzal"
@@ -602,14 +602,14 @@
         "currency_name": "Hong Kong Dollar"
     },
     "Hungary": {
-        "national_dish": "Guly\u00e1s,",
+        "national_dish": "Gulyás,",
         "languages": "German;Hungarian;Romani;Romanian;Serbo-Croatian;Slovak",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Hungarian Forint"
     },
     "Iceland": {
-        "national_dish": "H\u00e1karl, \u00deorramatur",
+        "national_dish": "Hákarl, Þorramatur",
         "languages": "English;Icelandic",
         "religion": "Christianity",
         "government": "Republic",
@@ -876,14 +876,14 @@
     },
     "Mayotte": {
         "national_dish": null,
-        "languages": "French;Mahor\u221a\u00a9;Malagasy",
+        "languages": "French;Mahor√©;Malagasy",
         "religion": "Islam",
         "government": "Territorial Collectivity of France",
         "currency_name": "Euro"
     },
     "Mexico": {
         "national_dish": "Tacos, Mole poblano,Chiles en nogada",
-        "languages": "Mixtec;N\u221a\u00b0huatl;Otom\u221a\u2260;Spanish;Yucatec;Zapotec",
+        "languages": "Mixtec;N√°huatl;Otom√≠;Spanish;Yucatec;Zapotec",
         "religion": "Christianity",
         "government": "Federal Republic",
         "currency_name": "Mexican Nuevo Peso"
@@ -896,7 +896,7 @@
         "religion": null
     },
     "Moldova": {
-        "national_dish": "M\u0103m\u0103lig\u0103, Sarmale, R\u0103cituri",
+        "national_dish": "Mămăligă, Sarmale, Răcituri",
         "languages": "Bulgariana;Gagauzi;Romanian;Russian;Ukrainian",
         "religion": "Christianity",
         "government": "Republic",
@@ -1015,7 +1015,7 @@
         "currency_name": "US Dollar"
     },
     "Norway": {
-        "national_dish": "F\u00e5rik\u00e5l",
+        "national_dish": "Fårikål",
         "languages": "Danish;English;Norwegian;Saame;Swedish",
         "religion": "Christianity",
         "government": "Constitutional Monarchy",
@@ -1044,7 +1044,7 @@
     },
     "Panama": {
         "national_dish": "Sancocho de gallina",
-        "languages": "Arabic;Creole English;Cuna;Embera;Guaym\u221a\u2260;Spanish",
+        "languages": "Arabic;Creole English;Cuna;Embera;Guaym√≠;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Panamanian Balboa"
@@ -1058,14 +1058,14 @@
     },
     "Paraguay": {
         "national_dish": "Sopa paraguaya",
-        "languages": "German;Guaran\u221a\u2260;Portuguese;Spanish",
+        "languages": "German;Guaran√≠;Portuguese;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Paraguay Guarani"
     },
     "Peru": {
         "national_dish": "Ceviche",
-        "languages": "Aimar\u221a\u00b0;Ket\u00ac\u00f6ua;Spanish",
+        "languages": "Aimar√°;Ket¬öua;Spanish",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Peruvian Nuevo Sol"
@@ -1078,7 +1078,7 @@
         "currency_name": "Philippine Peso"
     },
     "Poland": {
-        "national_dish": "Bigos, Pierogi,Kotlet schabowy, \u017burek",
+        "national_dish": "Bigos, Pierogi,Kotlet schabowy, Żurek",
         "languages": "Belorussian;German;Polish;Ukrainian",
         "religion": "Christianity",
         "government": "Republic",
@@ -1113,7 +1113,7 @@
         "currency_name": null
     },
     "Romania": {
-        "national_dish": "M\u0103m\u0103lig\u0103, Sarmale, Mici",
+        "national_dish": "Mămăligă, Sarmale, Mici",
         "languages": "German;Hungarian;Romani;Romanian;Serbo-Croatian;Ukrainian",
         "religion": "Christianity",
         "government": "Republic",
@@ -1232,14 +1232,14 @@
         "currency_name": "Singapore Dollar"
     },
     "Slovakia": {
-        "national_dish": "Bryndzov\u00e9 halu\u0161ky",
+        "national_dish": "Bryndzové halušky",
         "languages": "Czech and Moravian;Hungarian;Romani;Slovak;Ukrainian and Russian",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "Euro"
     },
     "Slovenia": {
-        "national_dish": "Ajdovi \u017eganci, Belokranjska povitica, Obara",
+        "national_dish": "Ajdovi žganci, Belokranjska povitica, Obara",
         "languages": "Hungarian;Serbo-Croatian;Slovene",
         "religion": "Christianity",
         "government": "Republic",
@@ -1267,7 +1267,7 @@
         "currency_name": "South African Rand"
     },
     "Spain": {
-        "national_dish": "Tortilla espa\u00f1ola",
+        "national_dish": "Tortilla española",
         "languages": "Basque;Catalan;Galecian;Spanish",
         "religion": "Christianity",
         "government": "Constitutional Monarchy",
@@ -1302,14 +1302,14 @@
         "currency_name": "Swaziland Lilangeni"
     },
     "Sweden": {
-        "national_dish": "K\u00f6ttbullar, Kr\u00e4ftskiva,Surstr\u00f6mming,Ostkaka",
+        "national_dish": "Köttbullar, Kräftskiva,Surströmming,Ostkaka",
         "languages": "Arabic;Finnish;Norwegian;Southern Slavic Languages;Spanish;Swedish",
         "religion": "Christianity",
         "government": "Constitutional Monarchy",
         "currency_name": "Swedish Krona"
     },
     "Switzerland": {
-        "national_dish": "Cervelat,Fondue, R\u00f6sti",
+        "national_dish": "Cervelat,Fondue, Rösti",
         "languages": "French;German;Italian;Romansh",
         "religion": "Christianity",
         "government": "Federation",
@@ -1352,7 +1352,7 @@
     },
     "Togo": {
         "national_dish": null,
-        "languages": "Ane;Ewe;Gurma;Kaby\u221a\u00a9;Kotokoli;Moba;Naudemba;Watyi",
+        "languages": "Ane;Ewe;Gurma;Kaby√©;Kotokoli;Moba;Naudemba;Watyi",
         "religion": "Christianity",
         "government": "Republic",
         "currency_name": "CFA Franc BCEAO"
@@ -1379,7 +1379,7 @@
         "currency_name": "Tunisian Dollar"
     },
     "Turkey": {
-        "national_dish": "D\u00f6ner kebab, Kuru fasulye with pilav",
+        "national_dish": "Döner kebab, Kuru fasulye with pilav",
         "languages": "Arabic;Kurdish;Turkish",
         "religion": "Islam",
         "government": "Republic",
@@ -1463,14 +1463,14 @@
         "currency_name": "Vanuatu Vatu"
     },
     "Venezuela": {
-        "national_dish": "Pabell\u00f3n criollo",
+        "national_dish": "Pabellón criollo",
         "languages": "Goajiro;Spanish;Warrau",
         "religion": "Christianity",
         "government": "Federal Republic",
         "currency_name": "Venezuelan Bolivar"
     },
     "Vietnam": {
-        "national_dish": "Ph\u1edf, B\u00fan b\u00f2 Hu\u1ebf",
+        "national_dish": "Phở, Bún bò Huế",
         "languages": "Chinese;Khmer;Man;Miao;Muong;Nung;Thai;Tho;Vietnamese",
         "religion": "Folk Religions",
         "government": "Socialistic Republic",

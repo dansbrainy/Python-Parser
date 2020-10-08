@@ -7,7 +7,7 @@ import pprint
 
 def csv_parser(filename):
 
-    list = []
+    lines = []
     country = ""
     region = ""
     population = ""
@@ -37,13 +37,54 @@ def csv_parser(filename):
                     literacy = float(row['Literacy (%)'].replace(",", "."))
                     if literacy == "": literacy = "Unknown"
 
-                    list = [country, region, population, density, gdp, literacy]
+                    values = [country, region, population, density, gdp, literacy]
+                    
+                    lines.append(values)
+
+                    # pprint(lines)
 
                 except Exception as e:
                     gdp = "Unknown"
                     literacy = "Unknown"
                     pass
-                
-                print(list)
 
-csv_parser('countries')
+                return list
+
+data = csv_parser('countries')
+
+def json_parser(filename, data): 
+
+    languages = ""
+    dish = ""
+    religion = ""
+    government = ""
+    currency = ""
+
+    # pprint(data)
+
+    with open(filename + '.json', 'r') as json_file:
+
+        json_data = json.load(json_file)
+
+        for country in data[0]:
+            
+            # json_country = re.search(country, json_data)
+            # for item in 
+            try:
+                json_country = json_data[country]
+                languages = (json_country['languages']).split() 
+                if languages == "": languages = "Unknown"
+                dish = json_country['national_dish']
+                if dish == "": dish = "Unknown"
+                religion = json_country['religion']
+                if religion == "": dish = "Unknown"
+                government = json_country['government']
+                if government == "": government = "Unknown"
+                currency = json_country['currency']
+                if currency == "": currency = "Unknown"
+
+    
+            except Exception as e:
+                return e
+
+json_parser('additional_stats', data)
