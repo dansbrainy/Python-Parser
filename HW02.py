@@ -8,12 +8,12 @@ import pprint
 def csv_parser(filename):
 
     lines = []
-    countries = []
-    regions = []
-    populations = []
-    densities = []
-    gdps = []
-    literacies = []
+    # countries = []
+    # regions = []
+    # populations = []
+    # densities = []
+    # gdps = []
+    # literacies = []
 
     with open(filename + '.csv', 'r', encoding = "utf8") as csv_file:
 
@@ -26,27 +26,33 @@ def csv_parser(filename):
 
                 try:
 
-                    country = str(row['Country'].strip())    #removed outer spaces
+                    country = str(row['Country'].strip())   #removed outer spaces
                     region = str(row['Region'].strip())
                     population = int(row['Population'])
                     density = float(row['Pop. Density (per sq. mi.)'].replace(",", "."))
-                    gdp = int(row['GDP ($ per capita)']) if (gdp == ""): gdp = "Unknown"
-                    literacy = float(row['Literacy (%)'].replace(",", ".")) if literacy == "": literacy = "Unknown"
+                    gdp = int(row['GDP ($ per capita)'])
+                    
+                    literacy = float(row['Literacy (%)'].replace(",", ".")) 
+                    
 
-                    countries.append(country)
-                    regions.append(region)
-                    populations.append(population)
-                    densities.append(density)
-                    gdps.append(gdp)
-                    literacies.append(literacy)
+                    # countries.append(country)
+                    # regions.append(region)
+                    # populations.append(population)
+                    # densities.append(density)
+                    # gdps.append(gdp)
+                    # literacies.append(literacy)
 
-                    # lines.append(country, region, population, density, gdp, literacy)
-                    pprint.pprint(lines, indent=2)
-
+                    lines.append([country, region, population, density, gdp, literacy])
+            
                 except Exception as e:
-                    return e
+                    if gdp == "": gdp = "Unknown"
+                    if literacy == "": literacy = "Unknown"
+                    # return e
         
-    lines = countries, regions, populations, densities, gdps, literatures
+    # lines = [countries, regions, populations, densities, gdps, literacies]
+
+    # pprint.pprint(lines, indent=2)
+    # print(lines)
     csv_file.close()
 
     return lines
@@ -68,7 +74,9 @@ def json_parser(filename, data):
 
         json_data = json.load(json_file)
 
-        for country in data[0]:
+        for i in data:
+
+            country = i[0]
 
             # json_country = re.search(country, json_data)
             for item in json_data:
@@ -78,13 +86,18 @@ def json_parser(filename, data):
 
                     try:
 
-                        language = (item['languages']).split() if language == "": language = "Unknown"
-                        dish = item['national_dish'] if dish == "": dish = "Unknown"
-                        religion = item['religion'] if religion == "": religion = "Unknown"
-                        government = item['government'] if government == "": government = "Unknown"
-                        currency = item['currency'] if currency == "": currency = "Unknown"
+                        language = (item['languages']).split() 
+                        if language == "": language = "Unknown"
+                        dish = item['national_dish'] 
+                        if dish == "": dish = "Unknown"
+                        religion = item['religion'] 
+                        if religion == "": religion = "Unknown"
+                        government = item['government'] 
+                        if government == "": government = "Unknown"
+                        currency = item['currency'] 
+                        if currency == "": currency = "Unknown"
                         
-                        languages.append(langauge)
+                        languages.append(language)
                         dishes.append(dish)
                         religions.append(religion)
                         governments.append(government)
@@ -111,4 +124,5 @@ def json_parser(filename, data):
         pprint.pprint(details, indent=2)
 
 data = csv_parser('countries')    
-json_parser('additional_stats', data)
+print(data)     #testing
+# json_parser('additional_stats', data)
