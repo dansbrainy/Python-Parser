@@ -41,12 +41,10 @@ def csv_parser(filename):
                     
                     lines.append(values)
 
-                    # pprint(lines)
+                    pprint.pprint(lines, indent=2)
 
                 except Exception as e:
-                    gdp = "Unknown"
-                    literacy = "Unknown"
-                    pass
+                    return e
 
                 return lines
 
@@ -75,8 +73,7 @@ def json_parser(filename, data):
                     print('yes')            #WRITE
 
                 try:
-                    # json_country = json_data[country]
-
+            
                     languages = (item['languages']).split() 
                     if languages == "": languages = "Unknown"
                     dish = item['national_dish']
