@@ -118,8 +118,6 @@ def company_parser(filename, data):
 
         if (filename == 'companies'):
 
-            parsed_data['Unknown']= {'GDP ($ per capita)': 0}, {'businesses': 'value'}, {'industries': 'value'}, {'estimated_employees': 'value'}
-
             for row in csv_reader:      #Read
                 
                 try:
@@ -129,16 +127,17 @@ def company_parser(filename, data):
                     businesses = []
                     industries = []
                     estimated_employees = 0
-
+                    gdp = 0
+                    
                     length = len(data)
                     # i = 0
 
                     for i in range(length):
 
                         list_country_key = data[i][0]
-
-                        # print(list_country_key)
                         
+                        # print(list_country_key)
+
                         if country == list_country_key:
                             # print('yes') 
                             # print(list_country_key)
@@ -153,16 +152,17 @@ def company_parser(filename, data):
                                 industries.append(industry)
                                 estimated_employees += total_employee
 
-                                print(estimated_employees)
+                                # print(estimated_employees)
 
                             except Exception as e:
                                 return e
                                     
-                        if country == None:
+                        elif country == None:
                             print('no') 
                             country = "Unknown"
                             gdp = 0
                         
+                        parsed_data[country]= {'GDP ($ per capita)': gdp, 'businesses': businesses, 'industries': industries, 'estimated_employees': estimated_employees}
                     
                     # {'Country': 'Zimbabwe', 'Region': 'SUB-SAHARAN AFRICA', 'Population': 12236805, 'Pop. Density(per sq.rcapita)': 1900, 'Litera mi.)': 31.3, 'GDP ($ percapita)': 1900, 'Literacy (%)': 90.7, 'Languages': ['English', 'Ndebele', 'Nyanja', 'Shona'], 'National Dish': 'Sadza', 'Religion': 'cy Name': 'Zimbabwe DollChristianity', 'Government': 'Republic', 'Currency Name': 'Zimbabwe Dollar'}
 
@@ -191,4 +191,5 @@ data = csv_parser('countries')
 # pprint.pprint(data, indent=2)     #testing
 b = json_parser('additional_stats', data)
 # print(b)                          #execute testing
-company_parser('companies', data)
+A = company_parser('companies', data)
+pprint.pprint(A, indent=3)
