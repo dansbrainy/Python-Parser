@@ -46,7 +46,7 @@ def json_parser(filename, data):
 
     new_data = []
     # print(data[0][0])
-    
+
     with open(filename + '.json', 'r') as json_file:
 
         json_data = json.load(json_file)
@@ -108,7 +108,87 @@ def json_parser(filename, data):
     # pprint.pprint(details, indent=2)
     return new_data
 
-data = csv_parser('countries')    
+def company_parser(filename, data):
+    
+    parsed_data = {}
+
+    with open(filename + '.csv', 'r', encoding = "utf8") as csv_file:
+
+        csv_reader = csv.DictReader(csv_file)
+
+        if (filename == 'companies'):
+
+            parsed_data['Unknown']= {'GDP ($ per capita)': 0}, {'businesses': 'value'}, {'industries': 'value'}, {'estimated_employees': 'value'}
+
+            for row in csv_reader:      #Read
+                
+                try:
+
+                    country = str(row['country'].strip())   #removed outer spaces
+                    country =" ".join([word.capitalize() for word in country.split()])  #capitalise each word
+                    businesses = []
+                    industries = []
+                    estimated_employees = 0
+
+                    length = len(data)
+                    # i = 0
+
+                    for i in range(length):
+
+                        list_country_key = data[i][0]
+
+                        # print(list_country_key)
+                        
+                        if country == list_country_key:
+                            # print('yes') 
+                            # print(list_country_key)
+                            try:
+                                gdp = int(data[i][5])
+                                business = str(row['name'].strip())
+                                business = " ".join([word.capitalize() for word in business.split()])
+                                industry = str(row['industry'].strip())
+                                total_employee = int(row['total employee estimate'])
+
+                                businesses.append(business)
+                                industries.append(industry)
+                                estimated_employees += total_employee
+
+                                print(estimated_employees)
+
+                            except Exception as e:
+                                return e
+                                    
+                        if country == None:
+                            print('no') 
+                            country = "Unknown"
+                            gdp = 0
+                        
+                    
+                    # {'Country': 'Zimbabwe', 'Region': 'SUB-SAHARAN AFRICA', 'Population': 12236805, 'Pop. Density(per sq.rcapita)': 1900, 'Litera mi.)': 31.3, 'GDP ($ percapita)': 1900, 'Literacy (%)': 90.7, 'Languages': ['English', 'Ndebele', 'Nyanja', 'Shona'], 'National Dish': 'Sadza', 'Religion': 'cy Name': 'Zimbabwe DollChristianity', 'Government': 'Republic', 'Currency Name': 'Zimbabwe Dollar'}
+
+                    # gdp = int(row['GDP ($ per capita)'])
+                    # region = str(row['Region'].strip())
+                    # population = int(row['Population'])
+                    # density = float(row['Pop. Density (per sq. mi.)'].replace(",", "."))
+
+                    
+                    # literacy = float(row['Literacy (%)'].replace(",", ".")) 
+
+                    # lines.append([country, region, population, density, gdp, literacy])
+                        
+
+                    
+                    # print(country)
+
+                        
+                except Exception as e:
+
+                    return e
+
+    return parsed_data
+    
+data = csv_parser('countries')  
 # pprint.pprint(data, indent=2)     #testing
 b = json_parser('additional_stats', data)
-print(b)
+# print(b)                          #execute testing
+company_parser('companies', data)
