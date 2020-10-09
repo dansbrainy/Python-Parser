@@ -8,12 +8,6 @@ import pprint
 def csv_parser(filename):
 
     lines = []
-    # countries = []
-    # regions = []
-    # populations = []
-    # densities = []
-    # gdps = []
-    # literacies = []
 
     with open(filename + '.csv', 'r', encoding = "utf8") as csv_file:
 
@@ -33,23 +27,13 @@ def csv_parser(filename):
                     gdp = int(row['GDP ($ per capita)'])
                     
                     literacy = float(row['Literacy (%)'].replace(",", ".")) 
-                    
-
-                    # countries.append(country)
-                    # regions.append(region)
-                    # populations.append(population)
-                    # densities.append(density)
-                    # gdps.append(gdp)
-                    # literacies.append(literacy)
 
                     lines.append([country, region, population, density, gdp, literacy])
             
-                except Exception as e:
+                except Exception:
                     if gdp == "": gdp = "Unknown"
                     if literacy == "": literacy = "Unknown"
-                    # return e
-        
-    # lines = [countries, regions, populations, densities, gdps, literacies]
+                    # pass e
 
     # pprint.pprint(lines, indent=2)
     # print(lines)
@@ -60,65 +44,69 @@ def csv_parser(filename):
       #check if right
 def json_parser(filename, data): 
 
-    details = {}
-
-    lines = []
-
+    new_data = []
+    # print(data[0][0])
+    
     with open(filename + '.json', 'r') as json_file:
 
         json_data = json.load(json_file)
+        # print(json_data)
 
-        for i in data[0]:
+        length = len(data)
+        i = 0
 
-            country = i
+        for i in range(length):
+        # while i < length:
 
-            # json_country = re.search(country, json_data)
-            for item in json_data:
+            country = data[i][0]
+            # print(country)
 
-                if country == item:
-                    print('yes')            #WRITE
+            if country in json_data:
+                # print('yes') 
+                # print(country)
 
-                    try:
+                details = {}
 
-                        languages = (item['languages']).split() 
-                        dish = item['national_dish'] 
-                        religion = item['religion'] 
-                        government = item['government'] 
-                        currency = item['currency'] 
-                        if languages == "": languages = "Unknown"
-                        if dish == "": dish = "Unknown"
-                        if religion == "": religion = "Unknown"
-                        if government == "": government = "Unknown"
-                        if currency == "": currency = "Unknown"
+                #WRITE
+                json_country_key = json_data[country]
+                # print(json_country_key)
+            
+                try:
 
-                        # languages.append(language)
-                        # dishes.append(dish)
-                        # religions.append(religion)
-                        # governments.append(government)
-                        # currencies.append(currency)
+                    languages = str(json_country_key['languages']).split(';') 
+                    dish = json_country_key['national_dish'] 
+                    religion = json_country_key['religion'] 
+                    government = json_country_key['government'] 
+                    currency = json_country_key['currency_name'] 
 
-                        details["Country"] = data[0]
-                        details["Region"] = data[1]
-                        details["Population"] = data[2]
-                        details["Pop. Density(per sq. mi.)"] = data[3]
-                        details["GDP ($ percapita)"] = data[4]
-                        details["Literacy (%)"] = data[5]
-                        
-                        details["Languages"] = languages
-                        details["National Dish"] = dish
-                        details["Religion"] = religion
-                        details["Government"] = government
-                        details["Currency Name"] = currency
+                    if languages == "": languages = "Unknown"
+                    if dish == "": dish = "Unknown"
+                    if religion == "": religion = "Unknown"
+                    if government == "": government = "Unknown"
+                    if currency == "": currency = "Unknown"
 
-                    except Exception as e:
+                    details['Country'] = data[i][0]
+                    details['Region'] = data[i][1]
+                    details['Population'] = data[i][2]
+                    details['Pop. Density(per sq. mi.)'] = data[i][3]
+                    details["GDP ($ percapita)"] = data[i][4]
+                    details["Literacy (%)"] = data[i][5]
+                    
+                    details["Languages"] = languages
+                    details["National Dish"] = dish
+                    details["Religion"] = religion
+                    details["Government"] = government
+                    details["Currency Name"] = currency
 
-                        # return e
-                        pass
+                    new_data.append(details)
+                    # i += 1
+                except Exception as e:
 
+                    return e
+                    # pass
 
     # pprint.pprint(details, indent=2)
-    return details
-
+    return new_data
 
 data = csv_parser('countries')    
 # pprint.pprint(data, indent=2)     #testing
