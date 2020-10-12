@@ -229,7 +229,7 @@ def country_stats(json_filename, txt_filename, data):
             
             for country, values in sorted(data.items()):
 
-                for value_key, value in value.items():
+                for value_key, value in values.items():
 
                     gdp = value_key['GDP ($ per capita'].items()
                     businesses = value_key['businesses'].count()
