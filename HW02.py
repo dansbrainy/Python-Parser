@@ -119,12 +119,16 @@ def company_parser(filename, data):
 
     gdp = 0
 
+    
+
     with open(filename + '.csv', 'r', encoding = "utf8") as csv_file:
 
         csv_reader = csv.DictReader(csv_file)
 
         if (filename == 'companies'):
             
+            parsed_data['Unknown'] = {'GDP ($ per capita)': 0}
+
             for row in csv_reader:
                 
                 country = str(row['country'].strip())   #removed outer spaces
@@ -139,6 +143,7 @@ def company_parser(filename, data):
                     country = "Unknown"
                     gdp = 0
                 elif country != "":
+
                     length = len(data)
                     for i in range(length):
 
@@ -152,49 +157,95 @@ def company_parser(filename, data):
                 in_list.append(industry)
                 em_list.append(total_employee)
 
-                businesses = []
-                industries = []
-                estimated_employees = 0
+                # businesses = []
+                # industries = []
+                # estimated_employees = 0
+
+                parsed_data[country] = {'GDP ($ per capita)': gdp, 'businesses': [], 'industries': []}
 
                 # parsed_data['Unknown'] = {'GDP ($ per capita)': 0}
                 # parsed_data[country] = {'GDP ($ per capita)': 0, 'businesses': [], 'industries': [], 'estimated_employees': 0}
 
                 for i in range(len(c_list)):
+                # for line in list:  
+
+                    # parsed_data.setdefault(country, []).append(value)
 
                     if country in c_list:
                     # if re.match(country, c_list):
 
-                        businesses.append(str(b_list[i]))
-                        industries.append(str(in_list[i]))
-                        estimated_employees += int(em_list[i])
+                        # businesses.append(str(b_list[i]))
+                        # industries.append(str(in_list[i]))
+                        # estimated_employees += int(em_list[i])
 
                         # parsed_data[country]= {'GDP ($ per capita)': gdp, 'businesses': businesses, 'industries': industries, 'estimated_employees': estimated_employees}
 
-                        # parsed_data[country]['businesses'].insert(0, )
-                        # parsed_data[country]['industries'].insert(0, )
-                        # parsed_data[country]['estimated_employees'] 
+                        parsed_data[country]['businesses'].append(business)
+                        parsed_data[country]['industries'].append(industry)
+                        parsed_data[country]['estimated_employees'] = total_employee + int(em_list[i])
+
+                        break
                         
                     else:
                         # create a new array in this slot
-                        businesses = []
-                        industries = []
-                        estimated_employees = 0
+                      
+                        # businesses = str(b_list[i])
+                        # industries = str(in_list[i])
+                        # estimated_employees = int(em_list[i])
 
-                        businesses = str(b_list[i])
-                        industries = str(in_list[i])
-                        estimated_employees = int(em_list[i])
+                        parsed_data[country]['businesses'] = business
+                        parsed_data[country]['industries']= industry
+                        parsed_data[country]['estimated_employees'] = total_employee
+                        
+                        break
 
-                        # parsed_data[country]= {'GDP ($ per capita)': gdp, 'businesses': businesses, 'industries': industries, 'estimated_employees': estimated_employees}
+                    # parsed_data[country]= {'GDP ($ per capita)': gdp, 'businesses': businesses, 'industries': industries, 'estimated_employees': estimated_employees}
                 
                         # if re.search(r'\[Data\]', line):
                         # if re.match(list_country_key.lower(), line):
                         # # elif "united states" in line:
                         
-                parsed_data[country]= {'GDP ($ per capita)': gdp, 'businesses': businesses, 'industries': industries, 'estimated_employees': estimated_employees}
-                    
+                # parsed_data[country]= {'GDP ($ per capita)': gdp, 'businesses': businesses, 'industries': industries, 'estimated_employees': estimated_employees}
+
+    csv_file.close()
+
     return parsed_data
 
-                
+def country_stats(json_filename, txt_filename, data):
+
+    try:
+        #write to json file
+        with open(json_filename + '.json', 'w') as json_file:
+            json.dump(data, json_file)
+            json_file.close()
+
+    except Exception as e:
+        
+        return e
+
+    try:
+        #write to text file
+        with open(txt_filename + '.txt', 'w') as txt_file:
+            
+            for country, values in sorted(data.items()):
+
+                for value_key, value in value.items():
+
+                    gdp = value_key['GDP ($ per capita'].items()
+                    businesses = value_key['businesses'].count()
+                    industries = value_key['indstries'].count()
+                    employees = value_key['estimated_employees'].items()
+
+                    txt_file.write(country + ' has a total of ' + businesses + ' businesses ,an estimated ' + employees + 'employees, a total of ' + industries + 'industries , and total GDP of ' + gdp + '.')
+            
+            txt_file.close()
+
+    except Exception as e:
+
+        return e
+    
+    return 'Data successfully exported.'
+
 data = csv_parser('countries')  
 # pprint.pprint(data, indent=2)     #testing
 b = json_parser('additional_stats', data)
