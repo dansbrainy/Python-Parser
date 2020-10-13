@@ -168,11 +168,7 @@ def company_parser(filename, data):
                             # gdp = int(data[i][4])
                             gdp = int(data[i]['GDP ($ percapita)'])
 
-                c_list.append(country)
-                b_list.append(business)
-                in_list.append(industry)
-                em_list.append(total_employee)
-
+                
                 # parsed_data[country] = {'GDP ($ per capita)': gdp, 'businesses': [], 'industries': []}
 
                 parsed_data.setdefault(country, {})
@@ -252,9 +248,9 @@ a = json_parser('additional_stats', data)
 
 b = company_parser('companies', a)
 
-# c = country_stats('country_stats','summary', b)
+c = country_stats('country_stats','summary', b)
 
 # pprint.pprint(A, indent=3)
 # company_parser('companies', data)
 # c = 
-pprint.pprint(b)
+pprint.pprint(c)
