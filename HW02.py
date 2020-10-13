@@ -208,7 +208,7 @@ def country_stats(json_filename, txt_filename, data):
     try:
         #write to json file
         with open(json_filename + '.json', 'w') as json_file:
-            json.dump(data, json_file)
+            json.dump(sorted(data.items()), json_file)
             json_file.close()
 
     except Exception as e:
@@ -219,16 +219,84 @@ def country_stats(json_filename, txt_filename, data):
         #write to text file
         with open(txt_filename + '.txt', 'w') as txt_file:
             
+            # FORMAT OF DATA PARSED
+            # 'Zimbabwe': {'GDP ($ per capita)': 1900,
+            #   'businesses': ['Econet Wireless Zimbabwe',
+            #                  'Jewson',
+            #                  'Delta Beverages Pvt Ltd',
+            #                  'University Of Zimbabwe',
+            #                  'Telone Zimbabwe (pvt) Ltd',
+            #                  'Midlands State University',
+            #                  'Cbz Bank Ltd',
+            #                  'Skills Funding Agency',
+            #                  'Voyage Care Ltd',
+            #                  'Telecel Zimbabwe',
+            #                  'Cabs',
+            #                  'Orbit Group',
+            #                  'National University Of Science & Technology',
+            #                  'Ishida Europe Ltd',
+            #                  'Barhale Plc',
+            #                  'Steward Bank',
+            #                  'Edgars Stores Zimbabwe',
+            #                  'Harare Institute Of Technology',
+            #                  "Loughborough Students' Union",
+            #                  'Dudley College',
+            #                  'Schweppes Zimbabwe Ltd',
+            #                  'Riozim Ltd',
+            #                  'Pertemps People Development Group',
+            #                  'Zb Financial Holdings Limited',
+            #                  'Cimas Medical Aid Society',
+            #                  'Netone Cellular Private Limited',
+            #                  'Kingdom Financial Holdings Ltd',
+            #                  'Ttcs Global'],
+            #   'estimated_employees': 245,
+            #   'industries': ['telecommunications',
+            #                  'building materials',
+            #                  'food & beverages',
+            #                  'higher education',
+            #                  'telecommunications',
+            #                  'education management',
+            #                  'banking',
+            #                  'government relations',
+            #                  'hospital & health care',
+            #                  'telecommunications',
+            #                  'financial services',
+            #                  'non-profit organization management',
+            #                  'higher education',
+            #                  'machinery',
+            #                  'civil engineering',
+            #                  'banking',
+            #                  'retail',
+            #                  'education management',
+            #                  'education management',
+            #                  'food & beverages',
+            #                  'mining & metals',
+            #                  'staffing and recruiting',
+            #                  'financial services',
+            #                  'telecommunications',
+            #                  'banking',
+            #                  'information technology and services']}
+
             for country, values in sorted(data.items()):
 
+                businesses = 0
+                industries = 0
+                gdp = 0
+                employees = 0
+
                 for value_key, value in values.items():
-
-                    gdp = value_key['GDP ($ per capita'].items()
-                    businesses = value_key['businesses'].count()
-                    industries = value_key['indstries'].count()
-                    employees = value_key['estimated_employees'].items()
-
-                    txt_file.write(country + ' has a total of ' + businesses + ' businesses ,an estimated ' + employees + 'employees, a total of ' + industries + 'industries , and total GDP of ' + gdp + '.')
+     
+                    if data[country][value_key] == 'GDP ($ per capita':
+                        gdp = value
+                    # gdp = data[country]value_key['GDP ($ per capita']
+                    if data[country][value_key] == 'businesses':
+                        businesses = value.count()
+                    if data[country][value_key] == 'indstries':
+                        industries = value.count()
+                    if data[country][value_key] == 'estimated_employees':
+                        employees = value
+                    
+                    txt_file.write(country + ' has a total of ' + str(businesses) + ' businesses ,an estimated ' + str(employees) + 'employees, a total of ' + str(industries) + 'industries , and total GDP of ' + str(gdp) + '.')
             
             txt_file.close()
 
@@ -237,6 +305,14 @@ def country_stats(json_filename, txt_filename, data):
         return e
     
     return 'Data successfully exported.'
+
+
+def inequality(region, gini_val):
+
+    result = {}
+
+    return result
+
 
 data = csv_parser('countries')  
 
