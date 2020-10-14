@@ -107,6 +107,7 @@ def json_parser(filename, data):
                     return e
                     # pass
 
+        json_file.close()
     # pprint.pprint(details, indent=2)
     return new_data
 
@@ -185,13 +186,13 @@ def company_parser(filename, data):
                     parsed_data[country]['industries'].append(industry)
 
                     
-                    parsed_data[country]['estimated_employees'] = total_employee
+                    parsed_data[country]['estimated_employees'] += total_employee
 
                 else:
                     # create a new array in this slot
                     parsed_data[country]['businesses'] = [business]
                     parsed_data[country]['industries']= [industry]
-                    parsed_data[country]['estimated_employees'] += total_employee
+                    parsed_data[country]['estimated_employees'] = total_employee
                     
                     # break
 
@@ -208,7 +209,7 @@ def country_stats(json_filename, txt_filename, data):
     try:
         #write to json file
         with open(json_filename + '.json', 'w') as json_file:
-            json.dump(sorted(data.items()), json_file)
+            json.dump(data, json_file, sort_keys=True, indent=3)
             json_file.close()
 
     except Exception as e:
@@ -277,27 +278,15 @@ def country_stats(json_filename, txt_filename, data):
             #                  'banking',
             #                  'information technology and services']}
 
-            for country, values in sorted(data.items()):
+            for country in sorted(data.keys()):
 
-                businesses = 0
-                industries = 0
-                gdp = 0
-                employees = 0
+                businesses = len(data[country]['businesses'])
+                industries = len(data[country]['industries'])
+                gdp = data[country]['GDP ($ per capita)']
+                employees = data[country]['estimated_employees']
 
-                for value_key, value in values.items():
-     
-                    if data[country][value_key] == 'GDP ($ per capita':
-                        gdp = value
-                    # gdp = data[country]value_key['GDP ($ per capita']
-                    if data[country][value_key] == 'businesses':
-                        businesses = value.count()
-                    if data[country][value_key] == 'indstries':
-                        industries = value.count()
-                    if data[country][value_key] == 'estimated_employees':
-                        employees = value
-                    
-                    txt_file.write(country + ' has a total of ' + str(businesses) + ' businesses ,an estimated ' + str(employees) + 'employees, a total of ' + str(industries) + 'industries , and total GDP of ' + str(gdp) + '.')
-            
+                txt_file.write(country + ' has a total of ' + str(businesses) + ' businesses, an estimated ' + str(employees) + ' employees, a total of ' + str(industries) +' industries, and total GDP of ' + str(gdp) + '. \n')
+
             txt_file.close()
 
     except Exception as e:
@@ -310,23 +299,33 @@ def country_stats(json_filename, txt_filename, data):
 def inequality(region, gini_val):
 
     result = {}
+    
+    response = requests.get('https://restcountries.eu/')
+
+    print(response)
 
     return result
 
 
-data = csv_parser('countries')  
+# --------------------------
+# EXECUSION AND RUNNING
+# --------------------------
+
+# data = csv_parser('countries')  
 
 # pprint.pprint(data, indent=2)     #testing
 
-a = json_parser('additional_stats', data)
+# data = json_parser('additional_stats', data)
 
 # print(b)                          #execute testing
 
-b = company_parser('companies', a)
+# data = company_parser('companies', data)
 
-c = country_stats('country_stats','summary', b)
+# data = country_stats('country_stats','summary', data)
 
-# pprint.pprint(A, indent=3)
-# company_parser('companies', data)
-# c = 
-pprint.pprint(c)
+# pprint.pprint(data)
+
+inequality('Europe', 40)
+# s = inequality('Europe', 40)
+
+# pprint.pprint(s)
