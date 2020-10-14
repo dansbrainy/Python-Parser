@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook_White</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Detail-Page-PB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DP_Static" transform="translate(-698.000000, -2625.000000)">
+            <g id="Social-Media-Icons" transform="translate(698.000000, 2626.000000)">
+                <g id="Facebook" transform="translate(1.000000, 0.000000)">
+                    <path d="M0,7.5 C0,3.35786417 3.35786417,0 7.5,0 C11.6421358,0 15,3.35786417 15,7.5 C15,11.6421358 11.6421358,15 7.5,15 C3.35786417,15 0,11.6421358 0,7.5 Z" id="Combined-Shape" stroke="#FFFFFF"></path>
+                    <path d="M8.03173597,11.6598365 L8.03173597,7.5794405 L9.15810371,7.5794405 L9.30737176,6.17331346 L8.03173597,6.17331346 L8.03364966,5.46953333 C8.03364966,5.10279374 8.06849482,4.90628629 8.59523879,4.90628629 L9.29939804,4.90628629 L9.29939804,3.5 L8.17287082,3.5 C6.81973046,3.5 6.34346014,4.1821229 6.34346014,5.32923912 L6.34346014,6.1734727 L5.5,6.1734727 L5.5,7.57959975 L6.34346014,7.57959975 L6.34346014,11.6598365 L8.03173597,11.6598365 Z" id="Path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

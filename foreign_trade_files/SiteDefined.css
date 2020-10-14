@@ -1,0 +1,614 @@
+@import "/main/css/format.css";
+
+
+
+
+
+/************************************************************
+
+ * EXTERNAL STYLESHEETS */
+
+/* CSS Document Created for: www.census.gov web sites */
+
+/* Original styles author: carollynn hammersmith, WSC/SSD*/
+
+/* creation: 1 Oct. 2008*/
+
+/* Updated: 31 March 2009 */
+
+
+
+/* CSS FORMAT: CSS is laid out as html appears in the page, top to bottom, left to right */
+
+
+
+/*Page Layout Styles --------------------------------------------------------------*/
+
+
+
+/* Site Name & Masthead images */
+
+
+
+/* #masthead -- OLD VERSION */
+
+/*
+
+#masthead
+
+{
+
+	background: #003399 url(../foreign-trade/images/ftd_slice.gif) repeat-x left center;
+
+		color: #003399; 
+
+	
+
+}
+
+*/
+
+
+
+/* #masthead -- NEW VERSION               */
+
+/* Included on advice of E2 - Rob Swartz. */
+
+
+
+#masthead
+
+{
+
+	background: #003399 url(/foreign-trade/images/ftd_slice.gif) repeat-x left center;
+
+	color: #FFF; 
+
+}
+
+
+
+/* Displays the 3 image masthead */
+
+/*div#masthead h1 
+
+{	background: url(<$MTBlogURL$>/img/icon.jpgimg/icon.jpg) no-repeat right top;} */
+
+/* div#masthead h1 -- Old Version */
+
+/*
+
+div#masthead h1 
+
+{
+
+	color: #FFFFFF;
+
+	background-image: url(/foreign-trade/images/ftd_masthead.gif);
+
+	background-repeat: no-repeat;
+
+	background-position: right;
+
+	background-color: #003399;
+
+} 
+
+*/
+
+
+
+/* div#masthead h1 -- New Version                */
+
+/* Inserted on advise of E2 - Rob Swartz         */
+
+
+
+div#masthead h1 /* Displays the 3 image masthead */
+
+{
+
+        height:80px;
+
+        background: url(/foreign-trade/images/ftd_masthead.jpg) no-repeat right top;
+
+} 
+
+
+
+
+
+/* top Nav - regular and dropdown - NOTE - THESE COLORS ARE THE STANDARD ECON COLORS AND CAN BE CHANGED TO SUIT YOUR SITES NEEDS */
+
+#dropdown {
+
+	margin: 0 auto;
+
+	background-color: #eee; /*changed from #5a6775 oryour custom color per usability test March 2009*/
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	border-bottom: 4px solid #003399; /* 700021   This is the default color of the bottom border*/
+
+	padding: 5px 0 1px 1em;
+
+}
+
+
+
+/* top level Nav category that is selected is "grayed" out and unclickable, indicating what category the visitor is in. */
+
+
+
+#dropdown li.selected {
+
+	background-color: #003399; /* 700021     This is the color of the bottom border */
+
+	padding: 2px 10px;  
+
+	color: #FFFFFF;            /* 333 color of text in the top nav  */
+
+	                           /* when the selection is unclickable */
+
+	border: 1px solid #fff;    /* Border around tab. */	
+
+	border-bottom: 2px solid #003399; /* Horizontal line across bottom of nav. */
+
+	text-decoration: none;
+
+} 
+
+
+
+ul.rMenu li a
+
+{color: #DDDDDD;	                  /*  color of text in top nav */
+
+	border-top: 1px solid #7B8999;    /*several shades lighter than the background */
+
+	border-right: 1px solid #7B8999;  /*several shades lighter than the background */
+
+	border-bottom: 1px solid #5a6775; /*same color as menu background */
+
+	border-left: 1px solid #7B8999;   /*several shades lighter than the background */
+
+
+
+}
+
+ul.rMenu-ver {	border-top: solid 1px #5a6775;	}
+
+
+
+ul.rMenu li a
+
+{
+
+	padding: 2px 10px 3px;	/* Do not change this! */
+
+}
+
+ul.rMenu li a:link,
+
+ul.rMenu li a:hover,
+
+ul.rMenu li a:focus, /*added on June 28, 2010 per instructions of Laura Yax - SL*/
+
+ul.rMenu li a:visited,
+
+ul.rMenu li a:active
+
+{   color: #000000;  /* Text color of the unselected tabs. */
+
+	text-decoration: none;
+
+}
+
+ul.rMenu li.sfhover a:active,
+
+ul.rMenu li:hover a:active,
+
+ul.rMenu li:focus a:active /*added on June 28, 2010 per instructions of Laura Yax - SL*/
+
+{
+
+	color: #fff;
+
+	background-color: #903;  /*   active hover color - is different than the selected link, grayed out color */
+
+}
+
+ul.rMenu li
+
+{
+
+	background-color: #DDDDDD;	/* (5a6775) Default background color of nav menu items */
+
+}
+
+ul.rMenu li:hover,
+
+ul.rMenu li:focus, /*added on June 28, 2010 per instructions of Laura Yax - SL*/
+
+ul.rMenu li.sfhover
+
+{
+
+	background-color: #903;	/* background color for parent menu items. */
+
+}
+
+ul.rMenu li a:hover,
+
+ul.rMenu li a:focus /*added on June 28, 2010 per instructions of Laura Yax - SL*/
+
+{
+
+	background-color: #003399 ; /*903  0099CC  background color or top nav tab on hover */
+
+	color: #fff;  /*color of font on hover */
+
+	border-bottom: 1px solid #003399; /*903 this needs to be the same as the hover background color */
+
+}
+
+
+
+
+
+/* Left -Column Styles-----------------------------------  */
+
+
+
+.navcontainer ul
+
+{
+
+list-style-type: none;
+
+padding: 0;
+
+margin: 0;
+
+width: 175px;
+
+border: 1px solid #ccc;
+
+border-width: 0 1px 1px 1px;
+
+}
+
+
+
+.navcontainer li
+
+{
+
+	padding: 3px 5px 2px 1.5em;
+
+	border-top: 1px solid #ccc;
+
+background: url(/foreign-trade/images/dot_hover.gif) no-repeat 0.5em center;
+
+	font-size: 90%;
+
+	line-height: 1.4;
+
+}
+
+
+
+.navcontainer ul li a
+
+{
+
+	text-decoration: none;
+
+	color: #00F;
+
+}
+
+
+
+.navcontainer ul li.selected  /*This style grays out the selected link in the left nav */
+
+{
+
+	padding: 3px 0 2px 1.5em;
+
+	text-decoration: none;
+
+	color: #333;
+
+	font-size: 90%;
+
+	background-color: #DBDBDB;
+
+}
+
+
+
+.navcontainer ul li a:visited
+
+{
+
+	color: #909;
+
+	text-decoration: underline;
+
+}
+
+
+
+.navcontainer ul li:hover, .navcontainer ul li a:hover,   /*added on June 28, 2010 per instructions of Laura Yax - SL*/
+
+.navcontainer ul li:focus, .navcontainer ul li a:focus    /*added on June 28, 2010 per instructions of Laura Yax - SL*/
+
+{
+
+	color: #900;
+
+	text-decoration: underline;
+
+}
+
+
+
+
+
+/* Left-column and right-column styles --------------------------------------------*/
+
+	
+
+#left-column .hi-lite, #right-column .hi-lite{
+
+	border:1px solid #ccc;
+
+	padding:1em;
+
+	margin: 10px 5px;
+
+	line-height:130%;
+
+	font-size:85%;
+
+}
+
+
+
+.hi-lite form, .hi-lite p    {margin-top:0;}
+
+/* Middle column Content ------------------------------------------------------*/
+
+
+
+#middle-column li {
+
+	padding: 0 0 5px 0;
+
+	margin: 0 0 5px 0;
+
+}
+
+
+
+/* Decorative Boxes */
+
+
+
+.hi-lite {
+
+	border:1px solid #903;
+
+	padding:5px;
+
+	margin:5px 5px 15px 5px;
+
+	line-height:130%;
+
+}
+
+
+
+/* Decorative Boxes */
+
+h3.hi-litehead {
+	display: inline;
+	position: relative;
+	top: -14px;
+	background-color: #fff;
+	padding: 0 4px;
+	margin: 5px;
+	font-weight: bold;
+	text-align: center;
+	color: #903;
+	/* FTD: Changed font size from 150% to 130% to accomodate some longer headings. */
+
+/*                                              - Blake Sanders, April 21, 2009 */
+
+	
+
+	font-size: 130%;
+	/* FTD: Added line-height at 110% to accomodate longer headings that wrapped.   */
+
+/*                                              - Blake Sanders, April 21, 2009 */
+
+
+
+	line-height: 110%;
+
+}	
+
+
+
+/* FTD: Added H3.ALPHALISTHEADER as a class for H3 tags in alphabetical lists    */
+
+/* like the DEFINITIONS pages.  Apply it to only the H3s involved in these lists.*/
+
+/*                                               - Blake Sanders, April 23, 2009 */
+
+	
+
+	
+
+h3.ftdalphalistheader{
+
+	color: #000000;
+
+	background-color: #EEEEEE;
+
+	text-align: center;
+
+	border: thin solid #999999;
+
+}
+
+
+
+/* FTD: Div chief wanted a way to highlight select links on the left navigation. */
+
+/* We crated a BLUE BOX.                                                         */
+
+/*                                                  - Blake Sanders, May 4, 2012 */	
+
+
+
+.navbluebox {
+
+/*	font-family: Arial, Helvetica, sans-serif; */
+
+	color: #FFFFFF;
+
+	background-color: #000099;
+
+	padding: 5px;
+
+/*	font-size: small; */
+
+/*	font-weight: bold; */
+
+	text-align: left;
+
+}
+
+
+
+.navbluebox a:link, .navbluebox a:visited, .navbluebox a:hover, .navbluebox a:focus, .navbluebox a:active 
+
+{
+
+	color: #FFFFFF;  /* Text color of the unselected tabs. */
+
+	text-decoration: none;
+
+	background-color: #000099;
+
+}
+
+	
+
+	
+
+
+
+
+
+/* right column styles --------------------------------------------------------*/
+
+
+
+#left-column .inside h3, #right-column .inside h3 { 
+
+/************IMPORTANT***********/
+
+/*DON'T change ANY of this style's values, Affects how IE 6 displays content.*/
+
+padding: 0 ; 
+
+margin: .5em 0 ; 
+
+}
+
+
+
+/* Custom CSS styles */
+
+/* This is where site owners can add new css for their sites */
+
+
+
+/* to add space between bullets */
+
+.bullet {
+
+	padding: 0 0 3px 0;
+
+	margin: 0 0 3px 0;
+
+	}
+
+
+
+/* Styles for Flash Countdown clock */
+
+
+
+table.countdownClock {
+
+	border: 1px solid #ccc;
+
+	width: 280px;
+
+	margin: 1em ;
+
+	border-collapse: collapse;
+
+}
+
+
+
+.clockh3
+
+{font: bold 150% Arial, Helvetica, sans-serif;
+
+	color: #903;
+
+	text-align: center;
+
+	margin: 0;
+
+	padding: 0 0 10px 0; }
+
+.textPositionCenter {
+
+	text-align: center;
+
+}
+
+.text-style-1 {
+	font-style: italic;
+}
+.list-dot {
+	list-style-image: url(/foreign-trade/images/dot_hover.gif);
+}
+.pad-20 {
+	padding-left: 20px;
+	left: auto;
+}
+.pad-50 {
+	padding-left: 50px;
+}
+.vid-container{
+	display:inline;
+	float:left;
+	width:210px;
+	height:300px;
+	padding:20px 20px 20px 20px;	
+}
+.vid-img{
+	width:210px;
+	height:150px;
+}
+.clear{
+	clear:both;
+}

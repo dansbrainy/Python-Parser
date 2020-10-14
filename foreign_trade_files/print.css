@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*******************************************************************************
+/* Page Sections */
+
+body
+{
+	background-color: #fff;
+	color: #000;
+	padding: 0;			
+	margin: 0;		
+	font-size: 10pt;
+	width: 785px;
+	font-family: arial, helvetica, sans-serif;}	
+
+#cb_header { display: none;}
+#ie6, #ie6 a, #ie6 div {display: none;}
+#page-container { border: none;}
+#inner-column-container, #masthead, #cb_footer {border: none;}
+#outer-column-container {border: none; }
+#inner-column-container {width: 100%;	border: none;}
+#source-order-container {width: 100%;	}
+#left-column { display: none;}
+#middle-column {width: 100%;}
+#right-column {display: none;}
+
+.inside{margin: 10px;	/* margin,  needed by  child elements */}
+/* General Font Sizes */
+h1{font-size:18pt; margin:0;}
+h2{font-size: 16pt; }
+h3{font-size: 14pt; }
+h4{font-size: 12pt; }
+h5{font-size: 10pt; }
+h6{font-size: 8pt; }
+a, a:link,  a:active, a:visited, a:hover{color: #000; text-decoration: none;}
+.clear-columns {clear: both;}
+img, img a { display: none;}
+ul, ol, dl, p, h2, h3, h4, h5, h6{	margin: 5px 0; 	padding: 10px 0; }
+ul, li {list-style-position: outside;}
+ul ul, ul ol, ol ul, ol ol {margin: 0; padding: 0; list-style-position: outside;}
+table {font-size: 10pt;}
+td, th {vertical-align: top;}
+#masthead, div#masthead h1 {display: none;}
+#cb_footer {display: none;}
+.clear-columns {display: none;}
+* html #page-container{display: none;}
+* html #middle-column, * html #left-column, * html #right-column, * html #source-order-container {display: none;}
+* html #middle-column {display: none;}
+* html #middle-column .inside {display: none;}
+* html #masthead, * html #cbfooter {display: none;}
+* html .inside {display: none;}
+* html #inner-column-container {display: none;}
+* html #source-order-container {display: none;}
+#left-column, #right-column {position: relative;}
+#left-column h3, #right-column h3 {	display: none;}
+#right-column p, #right-column ul {	display: none;}
+#reviseddate { text-align: left; font-size: 8pt; margin: 0;}
+.pdf {display: none;}
+.pdf span {display: none;}
+#masthead, div#masthead h1 {display: none; }
+#dropdown, #dropdown li.selected {display: none; }
+h3.hi-litehead { padding: 0; margin: 0; text-align: left; }
+.hi-lite { 	border:none; padding:0; margin:0; line-height:130%;}
+.hi-lite form, .hi-lite p    {margin:0;}
+#right-column .inside h3 {display: none; }
+#right-column .inside p {display: none; }

@@ -43,7 +43,7 @@ def csv_parser(filename):
     
       #check if right
 def json_parser(filename, data): 
-    #
+    
     # data = csv_parser('countries') 
 
     new_data = []
@@ -320,8 +320,7 @@ def inequality(region, gini_val):
                     result.setdefault(name, gini)
 
                     # result[name] = gini
-
-
+                
         # FORMAT OF DATA
         #     'latlng': [49.75, 6.16666666],
         #     'name': 'Luxembourg',
@@ -376,6 +375,72 @@ def inequality(region, gini_val):
 
     return result
 
+def html_parser(filename):
+
+    exports_list = []
+    imports_list = []
+
+ 
+    with open(filename + '.html') as html_file:
+
+        soup = BeautifulSoup(html_file, 'lxml')
+        
+        exports_table = soup.find('a', id='anch_60').find_parent('table')
+        # headers = exports_table.find_all('th')
+        # headers = [cell.get_text(strip=True) for cell in exports_table.find_all("th")]
+
+        e_rank_h = exports_table.find('th', id='rnk').text.strip()
+        e_cty_h = exports_table.find('th', id='cty').text.strip()
+        if e_cty_h == None: e_cty_h = 'Country'
+        exp_h = exports_table.find('th', id='exp').text.strip()
+        e_pct_h = exports_table.find('th', id='pct').text.strip()
+  
+        exp_headers = e_rank_h, e_cty_h, exp_h, e_pct_h
+
+        exports_list.append(exp_headers)
+
+        for row in exports_table.find_all("tr")[3:]:
+          
+            rank = row.find('td', headers='rnk').text
+            cty = row.find('a').text.strip()
+            exp = row.find('td', headers='exp').text.strip()
+            pct = row.find('td', headers='pct').text.strip()
+
+            new_data = rank, cty, exp, pct
+            exports_list.append(new_data)
+            
+
+        imports_table = soup.find('a', id='anch_76').find_parent('table')
+        
+        i_rank_h = imports_table.find('th', id='rnk').text.strip()
+        i_cty_h = imports_table.find('th', id='cty').text.strip()
+        if i_cty_h == None: i_cty_h = 'Country'
+        imp_h = imports_table.find('th', id='imp').text.strip()
+        i_pct_h = imports_table.find('th', id='pct').text.strip()
+  
+        imp_headers = i_rank_h, i_cty_h, imp_h, i_pct_h
+
+        exports_list.append(imp_headers)
+
+        for row in imports_table.find_all("tr")[3:]:
+          
+            rank = row.find('td', headers='rnk').text
+            cty = row.find('a').text.strip()
+            imp = row.find('td', headers='imp').text.strip()
+            pct = row.find('td', headers='pct').text.strip()
+
+            # print([cell.get_text(strip=True) for cell in row.find_all("td")])
+
+            new_data = rank, cty, imp, pct
+            imports_list.append(new_data)
+
+            
+    exports = tuple(exports_list)
+    imports = tuple(imports_list)
+
+    return exports, imports
+
+
 
 # --------------------------
 # EXECUSION AND RUNNING
@@ -396,6 +461,9 @@ def inequality(region, gini_val):
 # pprint.pprint(data)
 
 # inequality('Europe', 40)
-s = inequality('Africa', 57.8)
+# s = inequality('Africa', 53.9)
 
-pprint.pprint(s)
+# pprint.pprint(s)
+
+r= html_parser('foreign_trade')
+pprint.pprint(r, indent=2)

@@ -1,0 +1,256 @@
+/* Start CMS Footer styles 4/10/2014 */
+/* HVN - 03/26/2014 - Footer style sheet saved as individual style sheet */
+/* RCG - 04/10/2014 - Changed beta.census.gov references to www.census.gov */
+/* CJS - 03/06/2018 - Changed to flattened styles */
+/* CSM - 03/14/2018 - Changed image font-size to 'inherit' jira ticket HEADER 251 
+       - 03/26/2018 - Changed URL to "//www.census.gov/" 
+*/
+@charset "utf-8";
+footer a:focus, footer a:hover{
+    background-color:transparent;
+}
+
+/* added until Bootstrap is added to all pages */
+.grid_footer_links .col-lg-2 {
+    float: left;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.offscreen {
+    position: absolute;
+    left: -999px;
+    z-index: 50000;
+    overflow: hidden;
+}
+
+.grid_footer_links {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 960px;
+}
+
+@media (min-width: 1260px) {
+    .grid_footer_links {
+        width: 1260px
+    }
+}
+
+.col-lg-2 {
+    width: 16.66666667%;
+}
+
+/*.foot_col1{width:160px;}
+.foot_col2{width:160px;}
+.foot_col3{width:160px;}
+.foot_col4{width:160px;}
+.foot_col5{width:160px;}
+.foot_col6{width:160px;}*/
+
+.foot_bottom {
+    width: 100%;
+    height: auto;
+}
+
+.foot_bottom_links {
+    width: 960px;
+}
+
+.footer {
+    background-color: #112e51;
+}
+
+.foot_col_headers {
+    font: x-small Arial, Verdana, sans-serif;
+    color: #e7f0f4;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.foot_col {
+    width: 143px;
+    float: left;
+    font: x-small Arial, Verdana, sans-serif;
+    line-height: 18px;
+    margin-top: 10px;
+    height: auto;
+    padding-right: 7px;
+}
+
+.foot_col_line {
+    background-color: #fff;
+    height: 200px;
+    width: 1px;
+    margin-top: 15px;
+}
+
+.foot_col ul {
+    position: relative;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+
+.foot_col ul::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 210px;
+    background: #fff;
+    max-height: 210px;
+}
+
+.grid_footer_links .col-lg-2:first-child .foot_col ul::before {
+    display: none;
+}
+
+.foot_col_link {
+    padding-bottom: 5px;
+    line-height: normal;
+}
+
+/*.foot_col1{width:160px;float:left;background-image:url("//www.census.gov/main/img/new_census_head_foot/footer-lines.png");background-repeat:no-repeat;font:x-small Arial,Verdana,sans-serif;background-position:120px 0;line-height:18px;margin-top:10px;height:auto;}
+.foot_col2{background-image:url("//www.census.gov/main/img/new_census_head_foot/footer-lines.png");background-repeat:no-repeat;margin-top:10px;background-position:120px 0;height:auto;font:x-small Arial,Verdana,sans-serif;line-height:18px;float:left;}
+.foot_col3{background-image:url("//www.census.gov/main/img/new_census_head_foot/footer-lines.png");background-repeat:no-repeat;margin-top:10px;height:auto;background-position:130px 0;font:x-small Arial,Verdana,sans-serif;line-height:18px;float:left;}
+.foot_col4{background-image:url("//www.census.gov/main/img/new_census_head_foot/footer-lines.png");background-repeat:no-repeat;margin-top:10px;height:auto;background-position:145px 0;font:x-small Arial,Verdana,sans-serif;line-height:18px;float:left;}
+.foot_col5{background-image:url("//www.census.gov/main/img/new_census_head_foot/footer-lines.png");background-repeat:no-repeat;margin-top:10px;height:auto;font:x-small Arial,Verdana,sans-serif;color:#e7f0f4;background-position:140px 0;line-height:18px;float:left;}
+.foot_col6{margin-top:10px;padding-left:10px;width:120px;min-height:280px;font:x-small Arial,Verdana,sans-serif;color:#000;line-height:18px;float:left;}
+*/
+.foot_col a, .foot_col1 a, .foot_col2 a, .foot_col3 a, .foot_col4 a, .foot_col5 a, .foot_col6 a {
+    color: #fff;
+}
+
+.foot_bottom {
+    padding-bottom: 10px;
+    font-size: 10px;
+    clear: both;
+}
+
+.foot_bottom_line {
+    background-color: #fff;
+    height: 1px;
+    width: 200px;
+}
+
+.foot_bottom_links {
+    border-top: 1px solid #fff;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    margin: 10px auto 0;
+    width: 855px;
+}
+
+.foot_bottom_links a {
+    color: #fff;
+    font: x-small Arial, Verdana, sans-serif;
+}
+
+.foot_bottom_links a:hover {
+    font: x-small Arial, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.foot_bottom_links a:focus {
+    font: x-small Arial, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.foot_bottom_socialLinks {
+    margin-top: 15px;
+    font: bold x-small Arial, Verdana, sans-serif;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+a.foot_bottom_socialLinks {
+    font: bold x-small Arial, Verdana, sans-serif;
+}
+
+a:hover.foot_bottom_socialLinks {
+    font: bold x-small Arial, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.foot_bottom_socialLinks img {
+    margin: 0px;
+    border: 0px;
+}
+
+img {
+    color: transparent;
+    font-size: inherit; /*POP CLOCKS individual world maps depends on a percentage of the font-size.*/
+    vertical-align: middle;
+}
+
+.foot_bottom_socialLinks:focus {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+.grid_footer_links a {
+    text-decoration: none;
+}
+
+.footerbottom .legal-menu {
+    list-style: none;
+    margin-top: 5px;
+    margin-left: -5px;
+    padding-left: 0;
+}
+.footerbottom .legal-menu > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: relative;
+}
+.footerbottom .legal-menu > li::after {
+    content: '|';
+    width: 1px;
+    display: block;
+    top: 0;
+    bottom: 2px;
+    position: absolute;
+    line-height: 1;
+    right: -1px;
+}
+.footerbottom .legal-menu > li:last-child::after {
+    display: none;
+}
+.footerbottom a {
+    text-decoration: none;
+}
+
+.foot_col a:hover, .foot_col1 a:hover, .foot_col2 a:hover, .foot_col3 a:hover, .foot_col4 a:hover, .foot_col5 a:hover, .foot_col6 a:hover {
+    text-decoration: underline;
+}
+
+.foot_col a:focus, .foot_col1 a:focus, .foot_col2 a:focus, .foot_col3 a:focus, .foot_col4 a:focus, .foot_col5 a:focus, .foot_col6 a:focus {
+    text-decoration: underline;
+}
+
+.footer .grid_footer_links a:hover {
+    text-decoration: underline;
+}
+
+.footer .grid_footer_links a:focus {
+    text-decoration: underline;
+}
+
+.footer .footerbottom a:hover {
+    text-decoration: underline;
+}
+
+.footer .footerbottom a:focus {
+    text-decoration: underline;
+}
+
+
+
+

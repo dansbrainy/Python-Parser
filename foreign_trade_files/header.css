@@ -1,0 +1,763 @@
+.cb-header-skip-nav.sr-only-focusable:focus,
+.cb-header-skip-nav.sr-only-focusable:active {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    color: white;
+    padding: 2px 4px;
+    background: #405773;
+    z-index: 1;
+}
+
+header {
+    text-align: left;
+    position: relative;
+}
+
+/* GLOBAL header styles */
+#innerPage {
+    margin-top: 0;
+}
+
+.topBg {
+    background-color: #112e51;
+    height: 106px;
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnavigation.topnavdropdown {
+    /*height: 0;*/
+    /*transition: height 300ms ease-in-out;*/
+}
+
+.belowHeader .wrapper {
+    width: 1260px; /* Overriding extra.css width that is causing issues on cb_Header_dkBlue.inc header */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .belowHeader .wrapper {
+        width: 1280px; /* Helping IE*/
+    }
+}
+
+/*** LOGO STYLES ***/
+.cb-header-logo {
+    float: left;
+    padding-left: 1px;
+    width: 109px;
+}
+
+.cb-header-logo > * {
+    width: 100%;
+}
+
+.cb-header-logo a {
+    width: 100%;
+}
+
+header a:focus {
+    background-color: transparent;
+}
+
+/*#logo {
+ margin-top:0px;
+  width:108px;
+  position:relative;
+  height: 43px;/ *To make sure logo does not bleed out and push the header div* /
+	margin-left:18px;
+}*/
+
+#logoText h1 a {
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    left: 3px;
+    top: 12px;
+    z-index: 1000;
+    color: #041C5D;
+    font-family: Arial, serif;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+#logoText h1 a:focus {
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    left: 78px;
+    top: 12px;
+    z-index: 1000;
+    color: #041C5D;
+    font-family: Arial, serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+#logoText a {
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    left: 10px;
+    top: 12px;
+    z-index: 1000;
+    color: #041C5D;
+    font-family: Arial, serif;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+#logoText a:hover {
+    color: #112E51;
+}
+
+/**** HEADER TOP LINKS ****/
+.cb-header-tr {
+    padding-top: 10px;
+}
+
+.header_top_links {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    float: right;
+}
+
+.header_top_links li {
+    display: inline-block;
+    padding-right: 3px;
+    padding-left: 4px;
+    position: relative;
+}
+
+.header_top_links li:last-child {
+    padding-right: 0;
+}
+
+.header_top_links li::after {
+    content: "|";
+    position: absolute;
+    right: -6px;
+    height: 5px;
+    width: 5px;
+    display: block;
+    color: white;
+    top: 0;
+}
+
+.header_top_links li:last-child::after {
+    display: none;
+}
+
+.header_top_links a {
+    color: #ffffff;
+    font-weight: normal;
+    font: x-small Arial, Verdana, sans-serif;
+}
+
+.header_top_links a:hover, .header_top_links a:focus {
+    text-decoration: underline;
+}
+
+.header_top_socialLinks {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+/**** DESKTOP HEADER ****/
+#desktopHeader {
+    font: normal 13px Arial, Verdana, sans-serif;
+    color: #fff;
+}
+
+#desktopHeader .container-fluid .belowHeader {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #112E51;
+    height: 106px;
+}
+
+#desktopHeader .wrapper.wrapperMarginTop {
+    margin-top: 0;
+}
+
+#desktopHeader, img {
+    border: 0;
+}
+
+.desktopHeaderCls {
+    display: block;
+}
+
+#desktopHeader div {
+
+}
+
+#desktopHeader .header_top_links a {
+    color: #ffff !important;
+    font-weight: normal;
+    font: x-small Arial, Verdana, sans-serif;
+}
+
+#desktopHeader .header_top_links a:visited {
+    color: #ffff;
+    font-weight: normal;
+    font: x-small Arial, Verdana, sans-serif;
+}
+
+#desktopHeader .header_top_links a:hover, .header_top_links a:focus {
+    font: x-small Arial, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+#desktopHeader .header_top_socialLinks { /*added #desktopHeader  8/26-CJS */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+/*moved from extra.css*/
+
+#desktopHeader body {
+    background-image: none;
+}
+
+/*moved from extra.css*/
+#desktopHeader ul {
+    list-style: square inside;
+    color: rgb(51, 51, 51);
+    margin: 0;
+    padding: 0;
+}
+
+#desktopHeader li {
+    margin-left: 0;
+}
+
+#desktopHeader p,
+#desktopHeader ul,
+#desktopHeader fieldset {
+    margin-bottom: 0;
+    /*changed from 20px to 0 on 9-28-12*/
+}
+
+/*
+   override above paragraph margin and remove need for 'kickerSeparator' element which is added for spacing
+   adding color that was previously added to the HTML directly on the elements
+*/
+#desktopHeader .kicker > p {
+    color: #112E51;
+    margin-bottom: 10px;
+}
+
+/*
+#desktopHeader #topHeader {
+    background-image: url("//webdev.ssd.census.gov/main/responsive-header/images//headerbg_new.png");
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 2em;
+    height: 120px;
+}
+*/
+
+/**  Main Tabs **/
+#desktopHeader .nav-tabs > li,
+#desktopHeader .nav-tabs > li > a,
+#desktopHeader .nav-tabs > li > a:hover,
+#desktopHeader .nav-tabs > li > a:focus,
+#desktopHeader .nav-tabs > li > a:active {
+    border: 0 solid transparent;
+    border-radius: 0;
+    background-color: transparent !important;
+}
+
+#desktopHeader .nav-tabs > li > a {
+    line-height: 1.42857143;
+
+}
+
+#desktopHeader a:hover {
+    background-color: inherit;
+
+}
+
+/*#desktopHeader #mainTabs {
+    display: inline-block;
+    padding: 0;
+    /  *height: 5px;* /
+    border: 0 solid transparent;
+    background-repeat: no-repeat;
+    color: red;
+    font-weight: bold !important;
+    margin-left: 104px !important; / *** was 90**** /
+margin-right:40px !important;
+}*/
+
+/*#desktopHeader #mainTabs li:hover {*/
+/*background-color: #405773 !important;*/
+/*}*/
+
+#desktopHeader #mainTabs li div.subHeader {
+    font: xx-small Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: inherit;
+}
+
+#desktopHeader div.col-lg-6 {
+    background-color: white !important;
+}
+
+header .desktopHeaderCls .main-nav-section {
+    float: left;
+    padding-left: 86px;
+    padding-top: 8px;
+}
+
+#desktopHeader .categories {
+    margin: 5px 0 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+    width: 198px;
+    display: table;
+    background-color: transparent;
+}
+
+#desktopHeader .categories a {
+    text-wrap: normal;
+    color: #fff;
+}
+
+#desktopHeader .categories:hover,
+#desktopHeader .categories a:hover,
+#desktopHeader .categories:focus,
+#desktopHeader .categories.active,
+#desktopHeader .categories a:focus,
+#desktopHeader .categories.active a {
+    background-color: #405773;
+    cursor: pointer;
+}
+
+#desktopHeader .categories.active {
+    padding-bottom: 10px;
+    background-color: #FFFFFF !important;
+    margin-bottom: 0;
+}
+
+#desktopHeader .categories.subCategoryButton active {
+    padding-bottom: 10px;
+    background-color: #FFFFFF !important;
+    margin-bottom: 0;
+    color: #112E51;
+}
+
+.desktopHeaderCls .nav.nav-tabs.clickable {
+    padding: 0;
+    border: 0;
+}
+
+/** NAVIGATION TABS **/
+#desktopHeader, .nav-tabs {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+}
+
+#desktopHeader .nav-tabs > li,
+#desktopHeader .nav-tabs > li > a,
+#desktopHeader .nav-tabs > li > a:hover,
+#desktopHeader .nav-tabs > li > a:focus,
+#desktopHeader .nav-tabs > li > a:active {
+    border: 0 solid transparent;
+    border-radius: 0;
+    background-color: transparent !important;
+    margin-right: -10px;
+}
+
+#desktopHeader .tab-content {
+    background-color: #FFFFFF !important;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+/**** SUB CATEGORY BUTTON ****/
+
+.subCategoryButton .active a.accessibleLink {
+    background-color: #FFFFFF !important;
+}
+
+/**** KICKER LINK(S) ****/
+
+#desktopHeader .kicker {
+    background-color: white !important;
+    color: #112E51;
+    width: 360px;
+    min-height: 185px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #112E51;
+    font-weight: bold !important;
+
+}
+
+#desktopHeader .kickerLink > a:hover {
+    text-decoration: underline; /*CSM 02.26.2018*/
+    background-color: #FFFFFF !important;
+}
+
+#desktopHeader .kickerLink > a:visited {
+    color: #112E51;
+    background-color: #FFFFFF !important;
+}
+
+/**** SUB LINK(S) ***/
+#desktopHeader .subLinks {
+    height: 180px;
+    width: 390px;
+    margin: 15px;
+    color: #112E51;
+    background-color: white !important;
+}
+
+#desktopHeader .subLink {
+    padding-left: 10px;
+    background-color: #FFFFFF !important;
+}
+
+#desktopHeader .subLink a {
+    line-height: 18px;
+}
+
+#desktopHeader .subLink a.accessibleLink {
+    color: #112E51;
+    background-color: white !important;
+}
+
+/** SUB CATEGORIES CONTAINER **/
+#desktopHeader div.subCategoriesContainer {
+    width: 832px;
+    margin: auto;
+    background-color: #405773;
+}
+
+#desktopHeader div.subCategoriesContainer categories active {
+    width: 832px;
+    margin: auto;
+    background-color: white !important;
+
+}
+
+/** LINKS DROP DOWN **/
+
+#desktopHeader .linksDropDown {
+    background-color: #405773;
+    /*padding-top: 15px;
+	margin-top: 40px;*/
+    /*use below comment to push menu over content*/
+    /*position: absolute;*/
+    /*top: 104px;*/
+    z-index: 10000;
+}
+
+#desktopHeader .linksDropDown .mousedIn {
+    background-color: #FFF;
+
+}
+
+#desktopHeader .linksDropDown .nav > li > a {
+    text-align: center;
+    padding: 0;
+    height: 50px;
+    display: table-cell;
+    line-height: 14px;
+    outline: none;
+    vertical-align: middle;
+    background-color: #405773;
+    font-weight: bold;
+}
+
+#desktopHeader .linksDropDown .nav > li.active > a {
+    background-color: #FFFFFF !important;
+    color: #112E51;
+}
+
+#desktopHeader .linksDropDown .nav > li > a:hover {
+    text-decoration: underline;
+}
+
+#desktopHeader .headerCategories.activeCategory a {
+    background-color: #405773;
+}
+
+#desktopHeader #mainTabs .headerCategories.activeCategory > a {
+    /*background-color: transparent !important;*/
+    /*height: 68px;*/
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+}
+
+#desktopHeader #mainTabs.nav > li > a {
+    text-decoration: none;
+}
+
+#desktopHeader #mainTabs > li > a:hover,
+#desktopHeader #mainTabs > li > a:focus,
+#desktopHeader #mainTabs > li > a:active {
+    background-color: #405773 !important;
+    border: 0 solid;
+    border-radius: 0;
+}
+
+#desktopHeader #mainTabs.nav > li > a:hover {
+    color: white;
+    background-color: #405773;
+
+}
+
+#desktopHeader #mainTabs .headerCategories.activeCategory > a:hover {
+    /*background-color: transparent !important;*/
+}
+
+#desktopHeader #mainTabs.nav > li {
+    margin-right: 0;
+}
+
+#desktopHeader #mainTabs.nav > li > a {
+    padding: 6px 17px 31px 15px;
+}
+
+/* Change padding for Firefox */
+@-moz-document url-prefix() {
+    #desktopHeader #mainTabs.nav > li > a {
+        padding-bottom: 29px;
+    }
+}
+
+.nav.nav-tabs.clickable > li a .top_header {
+    font-weight: 700;
+}
+
+#desktopHeader .tab-pane {
+    font-weight: normal;
+}
+
+#desktopHeader .longDisplay + a {
+    font-size: 10px;
+    padding-top: 10px !important;
+}
+
+#desktopHeader #closeMainNav {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: bottom;
+    cursor: pointer;
+    padding-bottom: 0;
+    padding-top: 5px;
+    height: 40px;
+}
+
+/*** Header Rows ***/
+
+#headerTopRow {
+    /*background-image: url("//webdev.ssd.census.gov/main/responsive-header/images/headerbg_new.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    margin-right: 48px; /*was -15px*/
+}
+
+#headerBottomRow {
+    /* height: 20px;*/
+}
+
+#searchInputBox {
+    margin-right: 50px;
+
+}
+
+#mainNavHeaders {
+    height: 40px;
+    background-repeat: no-repeat;
+    background-color: #112E51;
+}
+
+#desktopHeader #mainTabs li div.subHeader {
+    font: x-small Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+
+}
+
+#desktopHeader #mainTabs li div.header {
+    color: white;
+    font-size: 13px;
+    line-height: 19.5px;
+    background-color: #112E51;
+    text-indent: 0;
+    padding: 0;
+
+    /* text-transform: Uppercase;*/
+}
+
+#desktopHeader div row {
+    background-color: white !important;
+
+}
+
+#desktopHeader div row.tab-content {
+    background-color: #FFFFFF;
+}
+
+#desktopHeader #mainTabs li div.top_header {
+    color: white;
+    font-size: small;
+    background-color: inherit;
+    /*text-transform: uppercase;*/
+}
+
+.topBg {
+    /**  background-color: #112E51; **/
+
+}
+
+.cb-head-search {
+    float: right;
+    padding-top: 19px;
+    width: 153px;
+}
+
+.cb-head-search .searchbox label > input[type="text"] {
+    height: auto;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.cb-header-br {
+    clear: both;
+    padding-top: 5px;
+}
+
+/******  KICKER LINK(S)  ******/
+
+#desktopHeader div.kickerlink {
+    background-color: white !important;
+    color: #112E51;
+
+}
+
+/*#desktopHeader #kickerSeparator {*/
+/*height: 10px;*/
+/*background-color: white;*/
+
+/*}*/
+
+#desktopHeader div .kicker col-lg-6 > p {
+    color: #112E51;
+    background-color: white !important;
+    margin: 10px;
+}
+
+#desktopHeader div .kickerLinks col-lg-6 {
+    color: #112E51;
+    background-color: white !important;
+}
+
+#desktopHeader div .kickerlink row {
+    color: #112E51;
+    background-color: white !important;
+}
+
+#desktopHeader div .kicker col-lg-6 {
+    color: #112E51;
+    background-color: white !important;
+}
+
+#desktopHeader .kickerLink > a {
+    color: #112E51;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    background-color: white;
+}
+
+#desktopHeader .kickerLink > a:hover {
+    text-decoration: underline; /*CSM 02.26.2018*/
+    background-color: #FFFFFF !important;
+}
+
+#desktopHeader .kickerLink > a:visited {
+    color: #112E51;
+    background-color: #FFFFFF !important;
+}
+
+/******  SUB LINK(S)  ******/
+
+#desktopHeader div .sublinks row {
+    background-color: white !important;
+
+}
+
+#dexktopHeader div sublink {
+    background-color: white !important;
+}
+
+#desktopHeader div sublink p {
+    background-color: white !important;
+}
+
+#desktopHeader div .subLinks col-lg-6 {
+    color: #112E51;
+    background-color: white !important;
+}
+
+#desktopHeader .subLink {
+    color: #112E51;
+    padding-left: 10px;
+}
+
+#desktopHeader .subLink a {
+    font-size: 13px;
+    font-weight: normal;
+    color: #112E51;
+    background-color: white;
+}
+
+#desktopHeader a {
+    text-decoration: none;
+}
+
+#desktopHeader a:hover {
+    text-decoration: underline;
+}
+
+#desktopHeader a img {
+    height: 42px;
+}
+
+#desktopHeader fieldset {
+    position: static;
+    background: none;
+}
+
+/*the top level, unordered list of navigation links*/
+/*#nav {
+    position: relative;
+    width: 825px;
+    height: 40px;
+    z-index: 4500;
+    left: 143px;
+}
+*/
