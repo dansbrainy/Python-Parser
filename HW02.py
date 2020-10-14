@@ -301,33 +301,25 @@ def inequality(region, gini_val):
     result = {}
     string = 'The given region was not found.'
 
-    # try:
-    response = requests.get('https://restcountries.eu/rest/v2/region/' + region)
+    try:
+        response = requests.get('https://restcountries.eu/rest/v2/region/' + region)
 
-    if response.status_code != 200:
-        return string
-    else:
-        
-        data = json.loads(response.text)  # parse json to dict
-
-        for country in data:
-
-            gini = country['gini']
-            name = country['name']
+        if response.status_code != 200:
+            return string
+        else:
             
-            if gini != None and gini > gini_val:
+            data = json.loads(response.text)  # parse json to dict
 
-                # result[name] = gini
+            for country in data:
 
-                result.setdefault(name, gini)
+                gini = country['gini']
+                name = country['name']
+                
+                if gini != None and gini > gini_val:
 
-                return result
+                    result.setdefault(name, gini)
 
-            # else:
-
-            #     string = "The gini provided is higher than all " + region + "'s ginis"
-    
-            #     return string
+                    # result[name] = gini
 
 
         # FORMAT OF DATA
@@ -374,14 +366,15 @@ def inequality(region, gini_val):
         #                     'nativeName': 'македонски јазик'}],
 
             # print(data)
-            # return data
-    # except Exception as e:
-    #     return e
+            
+
+    except Exception as e:
+        return e
     
 
     # print(response)
 
-    # return result
+    return result
 
 
 # --------------------------
@@ -402,7 +395,7 @@ def inequality(region, gini_val):
 
 # pprint.pprint(data)
 
-# inequality('Africa', 63.9)
-s = inequality('Europe', 40.9)
+# inequality('Europe', 40)
+s = inequality('Africa', 57.8)
 
 pprint.pprint(s)
