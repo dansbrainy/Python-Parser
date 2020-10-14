@@ -401,9 +401,9 @@ def html_parser(filename):
 
         for row in exports_table.find_all("tr")[3:]:
           
-            rank = row.find('td', headers='rnk').text
+            rank = int(row.find('td', headers='rnk').text)
             cty = row.find('a').text.strip()
-            exp = row.find('td', headers='exp').text.strip()
+            exp = float(row.find('td', headers='exp').text.strip())
             pct = row.find('td', headers='pct').text.strip()
 
             new_data = rank, cty, exp, pct
@@ -424,9 +424,9 @@ def html_parser(filename):
 
         for row in imports_table.find_all("tr")[3:]:
           
-            rank = row.find('td', headers='rnk').text
+            rank = int(row.find('td', headers='rnk').text)
             cty = row.find('a').text.strip()
-            imp = row.find('td', headers='imp').text.strip()
+            imp = float(row.find('td', headers='imp').text.strip())
             pct = row.find('td', headers='pct').text.strip()
 
             # print([cell.get_text(strip=True) for cell in row.find_all("td")])
