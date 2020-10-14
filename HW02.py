@@ -299,12 +299,89 @@ def country_stats(json_filename, txt_filename, data):
 def inequality(region, gini_val):
 
     result = {}
+    string = 'The given region was not found.'
+
+    # try:
+    response = requests.get('https://restcountries.eu/rest/v2/region/' + region)
+
+    if response.status_code != 200:
+        return string
+    else:
+        
+        data = json.loads(response.text)  # parse json to dict
+
+        for country in data:
+
+            gini = country['gini']
+            name = country['name']
+            
+            if gini != None and gini > gini_val:
+
+                # result[name] = gini
+
+                result.setdefault(name, gini)
+
+                return result
+
+            # else:
+
+            #     string = "The gini provided is higher than all " + region + "'s ginis"
     
-    response = requests.get('https://restcountries.eu/')
+            #     return string
 
-    print(response)
 
-    return result
+        # FORMAT OF DATA
+        #     'latlng': [49.75, 6.16666666],
+        #     'name': 'Luxembourg',
+        #     'nativeName': 'Luxembourg',
+        #     'numericCode': '442',
+        #     'population': 576200,
+        #     'region': 'Europe',
+        #     'regionalBlocs': [ { 'acronym': 'EU',
+        #                         'name': 'European Union',
+        #                         'otherAcronyms': [],
+        #                         'otherNames': []}],
+        #     'subregion': 'Western Europe',
+        #     'timezones': ['UTC+01:00'],
+        #     'topLevelDomain': ['.lu'],
+        #     'translations': { 'br': 'Luxemburgo',
+        #                     'de': 'Luxemburg',
+        #                     'es': 'Luxemburgo',
+        #                     'fa': 'لوکزامبورگ',
+        #                     'fr': 'Luxembourg',
+        #                     'hr': 'Luksemburg',
+        #                     'it': 'Lussemburgo',
+        #                     'ja': 'ルクセンブルク',
+        #                     'nl': 'Luxemburg',
+        #                     'pt': 'Luxemburgo'}},
+        # { 'alpha2Code': 'MK',
+        #     'alpha3Code': 'MKD',
+        #     'altSpellings': ['MK', 'Republic of Macedonia', 'Република Македонија'],
+        #     'area': 25713.0,
+        #     'borders': ['ALB', 'BGR', 'GRC', 'KOS', 'SRB'],
+        #     'callingCodes': ['389'],
+        #     'capital': 'Skopje',
+        #     'cioc': 'MKD',
+        #     'currencies': [ { 'code': 'MKD',
+        #                     'name': 'Macedonian denar',
+        #                     'symbol': 'ден'}],
+        #     'demonym': 'Macedonian',
+        #     'flag': 'https://restcountries.eu/data/mkd.svg',
+        #     'gini': 43.2,
+        #     'languages': [ { 'iso639_1': 'mk',
+        #                     'iso639_2': 'mkd',
+        #                     'name': 'Macedonian',
+        #                     'nativeName': 'македонски јазик'}],
+
+            # print(data)
+            # return data
+    # except Exception as e:
+    #     return e
+    
+
+    # print(response)
+
+    # return result
 
 
 # --------------------------
@@ -325,7 +402,7 @@ def inequality(region, gini_val):
 
 # pprint.pprint(data)
 
-inequality('Europe', 40)
-# s = inequality('Europe', 40)
+# inequality('Africa', 63.9)
+s = inequality('Europe', 40.9)
 
-# pprint.pprint(s)
+pprint.pprint(s)
