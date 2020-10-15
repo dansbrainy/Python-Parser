@@ -379,7 +379,6 @@ def html_parser(filename):
 
     exports_list = []
     imports_list = []
-
  
     with open(filename + '.html') as html_file:
 
@@ -434,23 +433,90 @@ def html_parser(filename):
             new_data = rank, cty, imp, pct
             imports_list.append(new_data)
 
+        html_file.close()
             
     exports = tuple(exports_list)
     imports = tuple(imports_list)
 
     return exports, imports
 
+def bonus(csv_filename, txt_filename, data):
 
+    """ Open a csv filename downloaded from https://data.worldbank.org/indicator/ST.INT.ARVL, 
+    of world tourism's records base on the number of instant arrival in countries for certain years, specifically 2018 
+    
+    it cleans and combines with data from json_parser 
+    
+    "Data Source","World Development Indicators", "Last Updated Date","2020-09-16" 
+    
+    Write data into a text file with the same name """
+    
+    # result = []
+    population = 0
+    arrived_2000 = ''
+    arrived_2010 = ''
+    arrived_2020 = ''
+
+    # url = 'https://www.worldometers.info/coronavirus/#countries'
+    # parsed_html = requests.get(url).text
+    
+    with open(csv_filename + '.csv', 'r', encoding = "utf8") as csv_file:
+        
+        csv_reader = csv.reader(csv_file)
+
+        if (csv_filename == 'api_instant_arrivals'):
+                
+            with open(txt_filename + '.txt', 'w', encoding='utf-8') as txt_file:
+                 
+                next(csv_reader)
+
+                for row in csv_reader:  
+                   
+                    try:
+
+                        country = str(row[0].strip())   #removed outer spaces
+                        arrived_2000 = row[44]
+                        if arrived_2000 == "": arrived_2000 = 0
+                        arrived_2010 = row[54]
+                        if arrived_2010 == "": arrived_2010 = 0
+                        arrived_2020 = row[64]
+                        if arrived_2020 == "": arrived_2020 = 0
+
+                        # print(country, arrived_2000, arrived_2010, arrived_2020)
+
+                        length = len(data)
+
+                        for i in range(length):
+
+                            country_key = data[i]['Country']
+                           
+                            # if country == country_key:
+                            if re.match(country_key, country):
+                                # gdp = int(data[i][4])
+                                population = int(data[i]['Population'])
+
+                    except Exception as e:
+                        
+                        pass 
+
+                    txt_file.write(country + ' has a population of ' + str(population) + ' , ' + str(arrived_2000) + ' arrived in 2000, ' + str(arrived_2010) + ' arrived in 2010, ' + str(arrived_2020) + ' people instantainly arrived in 2020. \n')
+                    txt_file.write('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- \n')
+                txt_file.close()
+
+        csv_file.close()
+
+    return 'data created successfully!'
+        
 
 # --------------------------
 # EXECUSION AND RUNNING
 # --------------------------
 
-# data = csv_parser('countries')  
+data = csv_parser('countries')  
 
 # pprint.pprint(data, indent=2)     #testing
 
-# data = json_parser('additional_stats', data)
+data = json_parser('additional_stats', data)
 
 # print(b)                          #execute testing
 
@@ -465,5 +531,7 @@ def html_parser(filename):
 
 # pprint.pprint(s)
 
-r= html_parser('foreign_trade')
-pprint.pprint(r, indent=2)
+# r= html_parser('foreign_trade')
+# pprint.pprint(r, indent=2)
+
+bonus('api_instant_arrivals', 'results', data)
