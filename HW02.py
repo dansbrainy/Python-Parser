@@ -29,44 +29,43 @@ def csv_parser(filename):
 
             for row in csv_reader:      #Read
                 
+            # try:
+
+                country = str(row['Country'].strip())   #removed outer spaces
+                region = str(row['Region'].strip())
+                population = int(row['Population'])
+                density = float(row['Pop. Density (per sq. mi.)'].replace(",", "."))
+                
                 try:
+                    a, b = int(row['GDP ($ per capita)']), 'Unknown'
+                    gdp = a if row['GDP ($ per capita)'] != None else b
+                    # if gdp == "": gdp = "Unknown"
+                except:
+                    gdp = 'Unknown'
+                
+                try:
+                    c, d = float(row['Literacy (%)'].replace(",", ".")), 'Unknown'
+                    literacy = c if row['Literacy (%)'].replace(",", ".") != None else d
+                    # if literacy == "": literacy = "Unknown"
+                except:
+                    literacy = 'Unknown'
+                
+                lines.append([country, region, population, density, gdp, literacy])
+        
+            # except Exception as e:
+                
+                # return e
 
-                    country = str(row['Country'].strip())   #removed outer spaces
-                    region = str(row['Region'].strip())
-                    population = int(row['Population'])
-                    density = float(row['Pop. Density (per sq. mi.)'].replace(",", "."))
-                    
-                    try:
-                        a, b = int(row['GDP ($ per capita)']), 'Unknown'
-                        gdp = a if row['GDP ($ per capita)'] != None else b
-                        # if gdp == "": gdp = "Unknown"
-                    except:
-                        gdp = 'Unknown'
-                    
-                    try:
-                        c, d = float(row['Literacy (%)'].replace(",", ".")), 'Unknown'
-                        literacy = c if row['Literacy (%)'].replace(",", ".") != None else d
-                        # if literacy == "": literacy = "Unknown"
-                    except:
-                        literacy = 'Unknown'
-                    
-                    lines.append([country, region, population, density, gdp, literacy])
-            
-                except Exception as e:
-                    
-                    return e
-
-    # pprint.pprint(lines, indent=2)
-    # print(lines)
     csv_file.close()
 
+    # pprint.pprint(lines, indent=2)
     # return len(lines)
+
     return lines
     
-      #check if right
 def json_parser(filename, data): 
     
-    # data = csv_parser('countries') 
+    # data = csv_parser('countries')    try to uncomment if it doesn't work
 
     new_data = []
     # print(data[0][0])
@@ -124,17 +123,21 @@ def json_parser(filename, data):
 
                     new_data.append(details)
                     # i += 1
-                except Exception as e:
+                except:
+                    if languages == "": languages = "Unknown"
+                    if dish == "": dish = "Unknown"
+                    if religion == "": religion = "Unknown"
+                    if government == "": government = "Unknown"
+                    if currency == "": currency = "Unknown"
 
-                    return e
-                    # pass
 
         json_file.close()
+
     # pprint.pprint(details, indent=2)
     return new_data
 
 def company_parser(filename, data):
-    
+
     parsed_data = {}
 
     gdp = 0
@@ -187,10 +190,20 @@ def company_parser(filename, data):
 
                         list_country_key = data[i]['Country']
                         # print(list_country_key)
-                        if country == list_country_key:
-                            # gdp = int(data[i][4])
-                            gdp = int(data[i]['GDP ($ percapita)'])
 
+                        if country == list_country_key:
+
+                            # gdp = int(data[i][4])
+                            # gdp = int(data[i]['GDP ($ percapita)'])
+
+                            try:
+
+                                gdp = int(data[i]['GDP ($ percapita)'])
+
+                            except:
+
+                                gdp = data[i]['GDP ($ percapita)']
+                        
                 
                 # parsed_data[country] = {'GDP ($ per capita)': gdp, 'businesses': [], 'industries': []}
 
@@ -307,7 +320,7 @@ def country_stats(json_filename, txt_filename, data):
                 gdp = data[country]['GDP ($ per capita)']
                 employees = data[country]['estimated_employees']
 
-                txt_file.write(country + ' has a total of ' + str(businesses) + ' businesses, an estimated ' + str(employees) + ' employees, a total of ' + str(industries) +' industries, and total GDP of ' + str(gdp) + '. \n')
+                txt_file.write(country + ' has a total of ' + str(businesses) + ' businesses, an estimated ' + str(employees) + ' employees, a total of ' + str(industries) +' industries, and total GDP of ' + str(gdp) + '.\n')
 
             txt_file.close()
 
@@ -316,7 +329,6 @@ def country_stats(json_filename, txt_filename, data):
         return e
     
     return 'Data successfully exported.'
-
 
 def inequality(region, gini_val):
 
@@ -399,6 +411,8 @@ def inequality(region, gini_val):
 
 def html_parser(filename):
 
+    # result = ()
+
     exports_list = []
     imports_list = []
  
@@ -406,61 +420,81 @@ def html_parser(filename):
 
         soup = BeautifulSoup(html_file, 'lxml')
         
-        exports_table = soup.find('a', id='anch_60').find_parent('table')
-        # headers = exports_table.find_all('th')
-        # headers = [cell.get_text(strip=True) for cell in exports_table.find_all("th")]
+        try:
 
-        e_rank_h = exports_table.find('th', id='rnk').text.strip()
-        e_cty_h = exports_table.find('th', id='cty').text.strip()
-        if e_cty_h == None: e_cty_h = 'Country'
-        exp_h = exports_table.find('th', id='exp').text.strip()
-        e_pct_h = exports_table.find('th', id='pct').text.strip()
-  
-        exp_headers = e_rank_h, e_cty_h, exp_h, e_pct_h
+            exports_table = soup.find('a', id='anch_60').find_parent('table')
+            # headers = exports_table.find_all('th')
+            # headers = [cell.get_text(strip=True) for cell in exports_table.find_all("th")]
 
-        exports_list.append(exp_headers)
+            e_rank_h = exports_table.find('th', id='rnk').text.strip()
+            e_cty_h = exports_table.find('th', id='cty').text.strip()
+            if e_cty_h == None: e_cty_h = 'Country'
+            exp_h = exports_table.find('th', id='exp').text.strip()
+            e_pct_h = exports_table.find('th', id='pct').text.strip()
+    
+            exp_headers = e_rank_h, e_cty_h, exp_h, e_pct_h
 
-        for row in exports_table.find_all("tr")[3:]:
-          
-            rank = int(row.find('td', headers='rnk').text)
-            cty = row.find('a').text.strip()
-            exp = float(row.find('td', headers='exp').text.strip())
-            pct = row.find('td', headers='pct').text.strip()
+            exports_list.append(exp_headers)
 
-            new_data = rank, cty, exp, pct
-            exports_list.append(new_data)
+            for row in exports_table.find_all("tr")[3:]:
             
+                rank = int(row.find('td', headers='rnk').text)
+                cty = row.find('a').text.strip()
+                exp = float(row.find('td', headers='exp').text.strip())
+                pct = row.find('td', headers='pct').text.strip()
 
-        imports_table = soup.find('a', id='anch_76').find_parent('table')
+                new_data = rank, cty, exp, pct
+                exports_list.append(new_data)
+
+        except:
+
+            exports_table = soup.find('a', id='anch_74').find_parent('table')
+         
+        try:
+
+            imports_table = soup.find('a', id='anch_76').find_parent('table')
         
-        i_rank_h = imports_table.find('th', id='rnk').text.strip()
-        i_cty_h = imports_table.find('th', id='cty').text.strip()
-        if i_cty_h == None: i_cty_h = 'Country'
-        imp_h = imports_table.find('th', id='imp').text.strip()
-        i_pct_h = imports_table.find('th', id='pct').text.strip()
-  
-        imp_headers = i_rank_h, i_cty_h, imp_h, i_pct_h
+            i_rank_h = imports_table.find('th', id='rnk').text.strip()
+            
+            try:
+                i_cty_h = imports_table.find('th', id='cty').text.strip()
 
-        exports_list.append(imp_headers)
+            except:
+                # if i_cty_h == None: i_cty_h = 'Country'
+                i_cty_h = 'Country'
 
-        for row in imports_table.find_all("tr")[3:]:
-          
-            rank = int(row.find('td', headers='rnk').text)
-            cty = row.find('a').text.strip()
-            imp = float(row.find('td', headers='imp').text.strip())
-            pct = row.find('td', headers='pct').text.strip()
+            imp_h = imports_table.find('th', id='imp').text.strip()
+            i_pct_h = imports_table.find('th', id='pct').text.strip()
+    
+            imp_headers = i_rank_h, i_cty_h, imp_h, i_pct_h
 
-            # print([cell.get_text(strip=True) for cell in row.find_all("td")])
+            imports_list.append(imp_headers)
 
-            new_data = rank, cty, imp, pct
-            imports_list.append(new_data)
+            for row in imports_table.find_all("tr")[3:]:
+            
+                rank = int(row.find('td', headers='rnk').text)
+                cty = row.find('a').text.strip()
+                imp = float(row.find('td', headers='imp').text.strip())
+                pct = row.find('td', headers='pct').text.strip()
+
+                # print([cell.get_text(strip=True) for cell in row.find_all("td")])
+
+                new_data = rank, cty, imp, pct
+                imports_list.append(new_data)
+
+        except:
+        
+            imports_table = soup.find('a', id='anch_90').find_parent('table')
 
         html_file.close()
             
-    exports = tuple(exports_list)
-    imports = tuple(imports_list)
+    # exports = tuple(exports_list)
+    # imports = tuple(imports_list)
 
-    return exports, imports
+    result = exports_list, imports_list
+
+    # return exports_list, imports_list
+    return result
 
 def bonus(csv_filename, txt_filename, data):
 
@@ -519,10 +553,11 @@ def bonus(csv_filename, txt_filename, data):
 
                     except Exception as e:
                         
-                        pass 
+                        return e 
 
                     txt_file.write(country + ' has a population of ' + str(population) + ' , ' + str(arrived_2000) + ' arrived in 2000, ' + str(arrived_2010) + ' arrived in 2010, ' + str(arrived_2020) + ' people instantainly arrived in 2020. \n')
                     txt_file.write('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- \n')
+                
                 txt_file.close()
 
         csv_file.close()
@@ -536,26 +571,29 @@ def bonus(csv_filename, txt_filename, data):
 
 data = csv_parser('countries')  
 
-pprint.pprint(data, indent=2)     #testing
+# pprint.pprint(data, indent=2)     #testing
 
-# data = json_parser('additional_stats', data)
+data = json_parser('additional_stats', data)
 
-# print(b)                          #execute testing
+# pprint.pprint(data, indent=2)                          #execute testing
 
-# data = company_parser('companies', data)
-
-# data = country_stats('country_stats','summary', data)
+data = company_parser('companies', data)
 
 # pprint.pprint(data)
+
+data = country_stats('country_stats','summary', data)
+
+pprint.pprint(data)
 
 # inequality('Europe', 40)
 # s = inequality('Africa', 53.9)
 
 # pprint.pprint(s)
 
-# r= html_parser('foreign_trade')
-# pprint.pprint(r, indent=2)
+r = html_parser('foreign_trade')
+pprint.pprint(r, indent=2)
 
-# data = csv_parser('countries')
-# data = json_parser('additional_stats', data)
-# bonus('api_instant_arrivals', 'results', data)
+v = csv_parser('countries')
+v = json_parser('additional_stats', v)
+v= bonus('api_instant_arrivals', 'results', v)
+pprint.pprint(v)
