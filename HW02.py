@@ -565,9 +565,9 @@ def bonus(csv_filename, txt_filename, data):
     return 'data created successfully!'
         
 
-# --------------------------
-# EXECUSION AND RUNNING
-# --------------------------
+# ---------------------------
+# EXECUTION AND RUNNING TESTS
+# ---------------------------
 
 data = csv_parser('countries')  
 
@@ -575,7 +575,7 @@ data = csv_parser('countries')
 
 data = json_parser('additional_stats', data)
 
-# pprint.pprint(data, indent=2)                          #execute testing
+# pprint.pprint(data, indent=2)     #execute testing
 
 data = company_parser('companies', data)
 
