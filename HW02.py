@@ -14,31 +14,53 @@ def csv_parser(filename):
         csv_reader = csv.DictReader(csv_file)
 
         if (filename == 'countries'):
+
             # find fieldnames
+            headers = csv_reader.fieldnames
+
+            c_h = headers[0]
+            r_h = headers[1]
+            p_h = headers[2]
+            d_h = headers[4]
+            g_h = headers[8]
+            l_h = headers[9]
+
+            lines.append([c_h, r_h, p_h, d_h, g_h, l_h])
 
             for row in csv_reader:      #Read
-
+                
                 try:
 
                     country = str(row['Country'].strip())   #removed outer spaces
                     region = str(row['Region'].strip())
                     population = int(row['Population'])
                     density = float(row['Pop. Density (per sq. mi.)'].replace(",", "."))
-                    gdp = int(row['GDP ($ per capita)'])
                     
-                    literacy = float(row['Literacy (%)'].replace(",", ".")) 
-
+                    try:
+                        a, b = int(row['GDP ($ per capita)']), 'Unknown'
+                        gdp = a if row['GDP ($ per capita)'] != None else b
+                        # if gdp == "": gdp = "Unknown"
+                    except:
+                        gdp = 'Unknown'
+                    
+                    try:
+                        c, d = float(row['Literacy (%)'].replace(",", ".")), 'Unknown'
+                        literacy = c if row['Literacy (%)'].replace(",", ".") != None else d
+                        # if literacy == "": literacy = "Unknown"
+                    except:
+                        literacy = 'Unknown'
+                    
                     lines.append([country, region, population, density, gdp, literacy])
             
-                except Exception:
-                    if gdp == "": gdp = "Unknown"
-                    if literacy == "": literacy = "Unknown"
-                    # pass e
+                except Exception as e:
+                    
+                    return e
 
     # pprint.pprint(lines, indent=2)
     # print(lines)
     csv_file.close()
 
+    # return len(lines)
     return lines
     
       #check if right
@@ -299,7 +321,7 @@ def country_stats(json_filename, txt_filename, data):
 def inequality(region, gini_val):
 
     result = {}
-    string = 'The given region was not found.'
+    string = 'The given region was not found'
 
     try:
         response = requests.get('https://restcountries.eu/rest/v2/region/' + region)
@@ -514,9 +536,9 @@ def bonus(csv_filename, txt_filename, data):
 
 data = csv_parser('countries')  
 
-# pprint.pprint(data, indent=2)     #testing
+pprint.pprint(data, indent=2)     #testing
 
-data = json_parser('additional_stats', data)
+# data = json_parser('additional_stats', data)
 
 # print(b)                          #execute testing
 
@@ -534,4 +556,6 @@ data = json_parser('additional_stats', data)
 # r= html_parser('foreign_trade')
 # pprint.pprint(r, indent=2)
 
-bonus('api_instant_arrivals', 'results', data)
+# data = csv_parser('countries')
+# data = json_parser('additional_stats', data)
+# bonus('api_instant_arrivals', 'results', data)
